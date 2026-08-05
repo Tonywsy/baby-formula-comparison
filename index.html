@@ -178,7 +178,7 @@ footer{background:var(--text);color:rgba(255,255,255,.7);padding:24px 16px;text-
       <span>新国标标准</span>
       <span>适配移动端/电脑端</span>
     </div>
-    <p class="hero-meta">数据来源：妈妈网新国标测评×2（飞鹤+君乐宝）、政府产品标签备案PDF（金领冠）、naifen123营养配方表（美庐）· 全部4款经GB 10765-2021国标验证(全部达标) · 价格京东/天猫核实(2026.08.05) · 经Kimi第三方复核验证(2026.08.05)</p>
+    <p class="hero-meta">数据来源：妈妈网新国标测评×2（飞鹤+君乐宝）、政府产品标签备案PDF（金领冠）、naifen123营养配方表（美庐）· 全部4款经GB 10765-2021国标验证(全部达标) · 价格抖音/京东/天猫/拼多多核实(2026.08.06) · 经Kimi第三方复核验证(2026.08.05)</p>
   </div>
 </div>
 
@@ -361,6 +361,13 @@ footer{background:var(--text);color:rgba(255,255,255,.7);padding:24px 16px;text-
     <strong>关于3处"数值完全相同"的疑似点</strong>：飞鹤vitB1=vitB2=601.2、君乐宝DHA=vitC=104.71、美庐protein=vitE=11.17——经核对均为不同成分恰好同值的<strong>真实巧合</strong>(飞鹤B1/B2妈妈网均标28μg/100kJ、君乐宝DHA/vitC妈妈网均标4.9mg/100kJ)，非复制错误。<br>
     <strong>自审结论</strong>：在Kimi已指出并修正的问题之外，未发现其他数据错误。残留局限仅为美庐全量维生素/矿物质表因naifen123页面拉取超时未逐条抓取，但其关键成分已确认、整体内洽且合规。<br><br>
     <strong>自动校验 harness（2026.08.05 部署）：</strong>本页数据现已配 <code>audit_harness.py</code> 自动校验关卡，<strong>每次修改数据后必跑</strong>。四道硬性检查：①能量自洽(Atwater≤5%)；②GB 10765-2021 国标反推（范围仅从 <code>gb_10765_2021.json</code> 官方库读取，不硬编码）；③注册号新鲜度（对照 <code>reg_numbers.json</code> 当前有效号）；④基础完整性（无负值/NaN、字段数=28、产品数=4）。另设来源原值软比对（<code>source_per_100kJ.json</code>，偏差>10%报警）。最近一次运行：0 硬性失败、0 软警告，全部通过。<br>
+    <strong>全网电商价格复核（2026.08.06，抖音商城/京东/天猫/拼多多逐平台核实）：</strong>4款1段价格均已重新核实并更新页面价格区间：<br>
+    · 飞鹤臻爱倍护900g：京东¥195-205、天猫¥174.6(历史低¥174)、唯品会¥175(30天低)、日常¥160-200 → <strong>现约175-205元</strong>；<br>
+    · 金领冠育护900g：天猫旗舰¥219、6罐装折合¥181/罐、整箱约¥150 → <strong>现约180-219元</strong>；<br>
+    · 美庐臻铂之星808g：抖音¥198、天猫¥198(naifenzhiku参考价¥328为吊牌价非成交价) → <strong>现约198元/808g</strong>；<br>
+    · 君乐宝乐铂808g：京东¥155-176、天猫¥145-160、历史低¥120 → <strong>现约120-176元</strong>。<br>
+    <strong>营养数据电商/评测交叉验证：</strong>君乐宝乐铂经妈妈网3篇测评(790825/790826/790910)逐条比对，蛋白质11.11/脂肪27.35/铁2.99/钙277.81/OPO6.41/DHA104.71/ARA123.95等全部吻合；金领冠育护此前已与政府备案PDF(YP20220062)全量比对一致；美庐臻铂之星OPO3.05g/乳铁蛋白33.26mg经百度爱企查2026、凤凰网双重确认。<br>
+    <strong>待罐体确认项（透明披露，非错误）：</strong>美庐臻铂之星DHA，本页取naifen123专属产品页(per-100kJ×系数21.07)得<strong>82.17mg/100g</strong>，但99.com.cn(2026配方解析)列41.1mg/100g(约半值)，两源存在2倍差异、且naifen123专属页本次抓取超时未能二次复核，<strong>建议以购买时罐体标签为准</strong>。<br>
     <strong>规格备注：</strong>金领冠育护规格零售端多为900g，而政府备案PDF(2025.01)标注净含量850g，属同产品不同包装规格，非数据错误。
   </div>
 </section>
@@ -381,25 +388,25 @@ const isMobile=()=>window.innerWidth<768;
 const products=[
   {name:'飞鹤臻爱倍护',short:'飞鹤臻爱倍护',color:COLORS[0],
     brand:'飞鹤 FIRMUS',age:'0-6个月',stage:'1段',
-    spec:'900g',price:'约185-205元',pricePerG:0.22,priceLow:0.21,priceHigh:0.23,
+    spec:'900g',price:'约175-205元',pricePerG:0.21,priceLow:0.19,priceHigh:0.23,
     milkSource:'黑龙江北纬47°黄金奶源带',
     milkBase:'生牛乳（鲜奶）',process:'干湿法复合工艺',
     regNum:'YP20170126'},
   {name:'金领冠育护',short:'金领冠育护',color:COLORS[1],
     brand:'伊利金领冠',age:'0-6个月',stage:'1段',
-    spec:'900g',price:'约168-219元',pricePerG:0.22,priceLow:0.19,priceHigh:0.24,
+    spec:'900g',price:'约180-219元',pricePerG:0.22,priceLow:0.20,priceHigh:0.24,
     milkSource:'黑龙江伊利专属牧场',
     milkBase:'生牛乳（鲜奶）',process:'湿法工艺+喷雾干燥',
     regNum:'YP20220062'},
   {name:'中特美庐臻铂之星',short:'美庐臻铂之星',color:COLORS[2],
     brand:'中特美庐（中国农垦）',age:'0-6个月',stage:'1段',
-    spec:'808g',price:'约198元（808g+100g）',pricePerG:0.22,priceLow:0.21,priceHigh:0.25,
+    spec:'808g',price:'约198元（808g）',pricePerG:0.245,priceLow:0.22,priceHigh:0.25,
     milkSource:'新西兰AQ认证草饲奶源（A2）',
     milkBase:'高油乳清粉+全脂乳粉（大包粉）',process:'国内灌装',
     regNum:'YP20230109'},
   {name:'君乐宝乐铂',short:'君乐宝乐铂',color:COLORS[3],
     brand:'君乐宝 JUNLEBAO',age:'0-6个月',stage:'1段',
-    spec:'808g',price:'约130-160元',pricePerG:0.18,priceLow:0.16,priceHigh:0.20,
+    spec:'808g',price:'约120-176元',pricePerG:0.18,priceLow:0.15,priceHigh:0.22,
     milkSource:'河北君乐宝自有牧场',
     milkBase:'生牛乳（鲜奶）',process:'湿法工艺一次成粉',
     regNum:'YP20170129（新版YP20250016含HMO）'}
