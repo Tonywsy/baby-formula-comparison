@@ -15,7 +15,8 @@
       "ARA": 4.60,
       "choline": 7.50,
       "taurine": 1.80,
-      "nucleotides": 1.74
+      "nucleotides": 1.74,
+      "_discrepancy_note": "DHA per-100kJ=3.90(本页取naifen123专属页id-4165×系数21.07得82.17mg/100g)；但99.com.cn(2026配方解析)列DHA 41.1mg/100g(约半值)。naifen123专属页2026.08.06抓取超时未能二次复核，存2倍差异，建议以罐体标签为准。"
     },
     "3_君乐宝乐铂": {
       "DHA": 4.9,
