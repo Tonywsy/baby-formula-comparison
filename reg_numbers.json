@@ -1,0 +1,27 @@
+{
+  "verified_date": "2026-08-05",
+  "source": "市监总局特殊食品信息查询平台 / CIRS(基于NMPA数据) / 政府备案PDF / baobei360 / naifenguanzhu 多源交叉确认",
+  "products": {
+    "飞鹤臻爱倍护": {
+      "current": "YP20170126",
+      "status": "valid",
+      "note": "长期有效注册号，多源确认"
+    },
+    "金领冠育护": {
+      "current": "YP20220062",
+      "status": "valid",
+      "note": "政府备案PDF(baobei360/天猫/naifenguanzhu)一致确认；搜索中出现的 YP20220262 为笔误"
+    },
+    "中特美庐臻铂之星": {
+      "current": "YP20230109",
+      "status": "valid",
+      "note": "有效注册号，Kimi复核确认"
+    },
+    "君乐宝乐铂": {
+      "current": "YP20250016",
+      "status": "current_valid",
+      "displayed_in_html": "YP20170129（新版YP20250016含HMO）",
+      "note": "2025.09 新版 YP20250016(含HMO 2'-FL 0.78g/100g)为当前有效注册号；网页营养数据基于旧版 YP20170129，已在页面注明"
+    }
+  }
+}
