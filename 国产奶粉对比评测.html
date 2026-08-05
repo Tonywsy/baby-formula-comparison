@@ -359,7 +359,9 @@ footer{background:var(--text);color:rgba(255,255,255,.7);padding:24px 16px;text-
     ② <strong>国标范围</strong>：将每项反推回每100kJ后对照<em>GB 10765-2021官方原文</em>(表1-4)逐项打标，全部达标（注：审计脚本初版误用了2010旧版范围，已更正为2021版；核苷酸在2021版已移出标准表、无强制范围，非越界）；<br>
     ③ <strong>权威源逐条反查</strong>：飞鹤/君乐宝经<strong>妈妈网</strong>新国标测评逐条比对(君乐宝28项全中、飞鹤全量一致)；金领冠经<strong>政府产品标签备案PDF(YP20220062)</strong>全量比对一致(OPO 6.00g/100g、核苷酸1.62mg/100kJ等均吻合)；美庐关键成分(OPO 3.05g、乳铁蛋白33.26mg、DHA 3.90/ARA 4.60/核苷酸1.74/胆碱7.50/牛磺酸1.80 per100kJ、益生元GOS+FOS)经naifen123+百度爱企查+凤凰网三重确认。<br>
     <strong>关于3处"数值完全相同"的疑似点</strong>：飞鹤vitB1=vitB2=601.2、君乐宝DHA=vitC=104.71、美庐protein=vitE=11.17——经核对均为不同成分恰好同值的<strong>真实巧合</strong>(飞鹤B1/B2妈妈网均标28μg/100kJ、君乐宝DHA/vitC妈妈网均标4.9mg/100kJ)，非复制错误。<br>
-    <strong>自审结论</strong>：在Kimi已指出并修正的问题之外，未发现其他数据错误。残留局限仅为美庐全量维生素/矿物质表因naifen123页面拉取超时未逐条抓取，但其关键成分已确认、整体内洽且合规。
+    <strong>自审结论</strong>：在Kimi已指出并修正的问题之外，未发现其他数据错误。残留局限仅为美庐全量维生素/矿物质表因naifen123页面拉取超时未逐条抓取，但其关键成分已确认、整体内洽且合规。<br><br>
+    <strong>自动校验 harness（2026.08.05 部署）：</strong>本页数据现已配 <code>audit_harness.py</code> 自动校验关卡，<strong>每次修改数据后必跑</strong>。四道硬性检查：①能量自洽(Atwater≤5%)；②GB 10765-2021 国标反推（范围仅从 <code>gb_10765_2021.json</code> 官方库读取，不硬编码）；③注册号新鲜度（对照 <code>reg_numbers.json</code> 当前有效号）；④基础完整性（无负值/NaN、字段数=28、产品数=4）。另设来源原值软比对（<code>source_per_100kJ.json</code>，偏差>10%报警）。最近一次运行：0 硬性失败、0 软警告，全部通过。<br>
+    <strong>规格备注：</strong>金领冠育护规格零售端多为900g，而政府备案PDF(2025.01)标注净含量850g，属同产品不同包装规格，非数据错误。
   </div>
 </section>
 
