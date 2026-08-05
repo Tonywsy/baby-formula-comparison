@@ -1,0 +1,10 @@
+# Python scripts (temp/validation tools)
+*.py
+_check.js
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# WorkBuddy internal
+.workbuddy/

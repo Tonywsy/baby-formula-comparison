@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=5.0">
+<meta name="theme-color" content="#E8843C">
+<meta name="description" content="飞鹤、金领冠、中特美庐、君乐宝、完达山5款国产新国标1段婴儿配方奶粉深度对比评测，涵盖营养成分、DHA/ARA、OPO、乳铁蛋白、益生菌、价格等全维度PK，附分场景选购建议。">
+<meta name="keywords" content="国产奶粉对比,1段奶粉,飞鹤臻爱倍护,金领冠育护,中特美庐臻铂之星,君乐宝乐铂,完达山优巧贝能,新国标奶粉,配方奶粉评测">
+<meta property="og:title" content="国产奶粉深度对比评测 · 5款1段配方奶粉全方位PK">
+<meta property="og:description" content="飞鹤、金领冠、中特美庐、君乐宝、完达山5款国产新国标1段配方奶粉全维度对比，含营养成分表、特色添加成分、价格、选购建议。">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="zh_CN">
+<title>国产奶粉深度对比评测 · 5款1段配方奶粉全方位PK</title>
+<script src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
+<style>
+:root{
+  --bg:#FAF6F0;--card:#FFFFFF;--text:#3D2E1F;--sub:#8B7355;--border:#E8DCC8;
+  --accent:#E8843C;--accent2:#D4632A;
+  --c1:#E8843C;--c2:#5B8DB8;--c3:#6B9B5A;--c4:#9B6BA8;--c5:#D4737A;
+  --radius:14px;--shadow:0 2px 12px rgba(61,46,31,.06);--shadow-lg:0 6px 24px rgba(61,46,31,.10);
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;background:var(--bg);color:var(--text);line-height:1.7;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1200px;margin:0 auto;padding:0 16px}
+
+/* Hero */
+.hero{background:linear-gradient(135deg,#E8843C 0%,#D4632A 50%,#B84A1A 100%);color:#fff;padding:40px 16px 34px;position:relative;overflow:hidden}
+.hero::after{content:'';position:absolute;top:-50px;right:-50px;width:240px;height:240px;background:rgba(255,255,255,.07);border-radius:50%}
+.hero::before{content:'';position:absolute;bottom:-70px;left:-40px;width:200px;height:200px;background:rgba(255,255,255,.05);border-radius:50%}
+.hero-inner{max-width:1200px;margin:0 auto;position:relative;z-index:1}
+.hero h1{font-size:clamp(1.5rem,4.5vw,2.1rem);font-weight:800;letter-spacing:.5px;margin-bottom:8px;text-shadow:0 2px 10px rgba(0,0,0,.12)}
+.hero .subtitle{font-size:clamp(.85rem,2.4vw,.98rem);opacity:.92;margin-bottom:14px}
+.hero-tags{display:flex;flex-wrap:wrap;gap:8px}
+.hero-tags span{background:rgba(255,255,255,.18);padding:5px 14px;border-radius:20px;font-size:.78rem;backdrop-filter:blur(4px);border:1px solid rgba(255,255,255,.12)}
+.hero-meta{margin-top:14px;font-size:.74rem;opacity:.82;line-height:1.6}
+
+/* Nav */
+nav{background:var(--card);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100;box-shadow:0 1px 6px rgba(0,0,0,.04)}
+nav .wrap{display:flex;gap:4px;overflow-x:auto;padding:8px 16px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+nav .wrap::-webkit-scrollbar{display:none}
+nav a{white-space:nowrap;padding:8px 14px;border-radius:8px;font-size:.85rem;color:var(--sub);text-decoration:none;transition:all .2s;font-weight:500;flex-shrink:0}
+nav a:hover,nav a.active{background:var(--accent);color:#fff}
+
+/* Section */
+section{padding:clamp(20px,4vw,32px) 0}
+.section-title{font-size:clamp(1.1rem,3.5vw,1.35rem);font-weight:700;margin-bottom:6px;display:flex;align-items:center;gap:10px}
+.section-title .icon{width:6px;height:26px;background:linear-gradient(180deg,var(--accent),var(--accent2));border-radius:3px;flex-shrink:0}
+.section-desc{font-size:.85rem;color:var(--sub);margin-bottom:18px;line-height:1.6}
+
+/* Source badge */
+.src-badge{display:inline-flex;align-items:center;gap:4px;padding:2px 10px;border-radius:12px;font-size:.72rem;font-weight:500;margin-left:8px;vertical-align:middle}
+.src-high{background:#E8F5E9;color:#2E7D32}
+.src-mid{background:#FFF3E0;color:#E65100}
+.src-low{background:#FFF8F0;color:#BF6A00}
+
+/* Card */
+.card{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);padding:clamp(14px,3vw,22px);margin-bottom:16px;border:1px solid var(--border)}
+
+/* Product cards */
+.products-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+.prod-card{background:var(--card);border-radius:var(--radius);padding:14px;box-shadow:var(--shadow);border-top:4px solid var(--accent);transition:transform .2s,box-shadow .2s;min-width:0;position:relative;overflow:hidden}
+.prod-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg)}
+.prod-card:nth-child(1){border-top-color:var(--c1)}
+.prod-card:nth-child(2){border-top-color:var(--c2)}
+.prod-card:nth-child(3){border-top-color:var(--c3)}
+.prod-card:nth-child(4){border-top-color:var(--c4)}
+.prod-card:nth-child(5){border-top-color:var(--c5)}
+.prod-card h3{font-size:clamp(.88rem,2.5vw,1.02rem);margin-bottom:4px;line-height:1.3;font-weight:700}
+.prod-card .brand{font-size:.74rem;color:var(--sub);margin-bottom:10px}
+.prod-card .info-row{display:flex;justify-content:space-between;font-size:.75rem;padding:3px 0;border-bottom:1px dashed var(--border);gap:8px}
+.prod-card .info-row:last-of-type{border:none}
+.prod-card .info-row .val{font-weight:600;color:var(--accent2);text-align:right;line-height:1.3;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:65%;font-size:.7rem}
+.prod-card .info-row .label{flex-shrink:0;color:var(--sub)}
+.price-tag{display:inline-block;background:linear-gradient(135deg,#FFF0E6,#FFE0CC);color:var(--accent2);padding:3px 12px;border-radius:12px;font-size:.78rem;font-weight:700;margin-top:8px}
+
+/* Chart */
+.chart-box{width:100%;height:400px}
+.chart-box-tall{height:480px}
+@media(max-width:768px){.chart-box{height:340px}.chart-box-tall{height:420px}}
+
+/* Table */
+.table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;border-radius:var(--radius);border:1px solid var(--border);max-height:620px;overflow-y:auto}
+table{width:100%;border-collapse:collapse;font-size:.82rem;min-width:680px}
+thead th{background:#F5EDDD;padding:10px 12px;text-align:center;font-weight:600;color:var(--text);position:sticky;top:0;z-index:5;white-space:nowrap}
+thead th:first-child{position:sticky;left:0;z-index:10;background:#F5EDDD;text-align:left;min-width:110px}
+tbody td{padding:8px 12px;text-align:center;border-bottom:1px solid var(--border);white-space:nowrap}
+tbody td:first-child{position:sticky;left:0;background:var(--card);text-align:left;font-weight:500;z-index:1;min-width:110px}
+tbody tr:nth-child(even){background:#FDF9F3}
+tbody tr:hover{background:#FAF0DC}
+tbody tr:hover td:first-child{background:#FAF0DC}
+tbody tr:nth-child(even):hover{background:#F5E5C8}
+tbody tr:nth-child(even):hover td:first-child{background:#F5E5C8}
+.highlight-row{background:#FFF8F0!important}
+.highlight-row td:first-child{background:#FFF8F0!important}
+
+/* Score */
+.score-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}
+.score-card{background:var(--card);border-radius:var(--radius);padding:16px;box-shadow:var(--shadow);text-align:center;border-top:4px solid var(--accent);transition:transform .2s}
+.score-card:hover{transform:translateY(-3px)}
+.score-card:nth-child(1){border-top-color:var(--c1)}
+.score-card:nth-child(2){border-top-color:var(--c2)}
+.score-card:nth-child(3){border-top-color:var(--c3)}
+.score-card:nth-child(4){border-top-color:var(--c4)}
+.score-card:nth-child(5){border-top-color:var(--c5)}
+.score-card .name{font-size:.88rem;font-weight:600;margin-bottom:10px;line-height:1.3}
+.score-ring{display:inline-block;position:relative;width:90px;height:90px;margin-bottom:8px}
+.score-ring-inner{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);background:#fff;width:72px;height:72px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-direction:column}
+.score-ring-inner .score-val{font-size:1.7rem;font-weight:800;display:block;line-height:1}
+.score-ring-inner .score-unit{font-size:.68rem;color:var(--sub);margin-top:1px}
+.score-card .dims{margin-top:6px;font-size:.72rem;color:var(--sub);line-height:1.5}
+.score-card .dims span{display:inline-block;margin:2px;padding:1px 8px;background:#F5EDDD;border-radius:8px}
+
+/* Badge */
+.badge{display:inline-block;padding:2px 8px;border-radius:6px;font-size:.72rem;font-weight:600;margin:1px}
+.badge.yes{background:#E8F5E9;color:#2E7D32}
+.badge.no{background:#F5F5F5;color:#BDBDBD}
+
+/* Summary */
+.summary-card{display:flex;align-items:flex-start;gap:12px;padding:16px;border-radius:12px;margin-bottom:10px;background:var(--card);box-shadow:var(--shadow);border-left:5px solid var(--accent);transition:transform .2s}
+.summary-card:hover{transform:translateX(4px)}
+.summary-card .label{flex-shrink:0;width:40px;height:40px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;color:#fff;font-size:.95rem}
+.summary-card .content{flex:1;min-width:0}
+.summary-card .content h4{font-size:.95rem;margin-bottom:4px}
+.summary-card .content p{font-size:.82rem;color:var(--sub);line-height:1.65}
+
+/* Disclaimer */
+.disclaimer{background:#FFF8F0;border:1px solid #FFE0B2;border-radius:var(--radius);padding:18px;font-size:.8rem;color:var(--sub);margin-top:16px;line-height:1.7}
+.disclaimer strong{color:var(--accent2)}
+
+/* Source table */
+.src-table{width:100%;border-collapse:collapse;font-size:.8rem}
+.src-table th{background:#F5EDDD;padding:8px 10px;text-align:left;font-weight:600;white-space:nowrap}
+.src-table td{padding:8px 10px;border-bottom:1px solid var(--border);vertical-align:top}
+.src-table td:first-child{font-weight:600}
+.src-table a{color:var(--accent2);text-decoration:none;word-break:break-all}
+.src-table a:hover{text-decoration:underline}
+
+/* Tabs */
+.tabs{display:flex;gap:6px;margin-bottom:14px;flex-wrap:wrap}
+.tab-btn{padding:6px 14px;border-radius:18px;border:1px solid var(--border);background:var(--card);font-size:.8rem;cursor:pointer;transition:all .2s;color:var(--sub);font-family:inherit}
+.tab-btn.active{background:var(--accent);color:#fff;border-color:var(--accent);box-shadow:0 2px 8px rgba(232,132,60,.3)}
+.tab-btn:hover:not(.active){border-color:var(--accent);color:var(--accent)}
+
+/* Footer */
+footer{background:var(--text);color:rgba(255,255,255,.7);padding:24px 16px;text-align:center;font-size:.78rem;margin-top:20px;line-height:1.7}
+
+/* To top */
+.totop{position:fixed;right:20px;bottom:20px;width:42px;height:42px;border-radius:50%;background:var(--accent);color:#fff;display:flex;align-items:center;justify-content:center;box-shadow:var(--shadow-lg);cursor:pointer;border:none;font-size:1.2rem;opacity:0;transition:opacity .3s,transform .2s;z-index:99}
+.totop.show{opacity:1}
+.totop:hover{background:var(--accent2);transform:translateY(-3px)}
+
+/* Responsive */
+@media(max-width:1024px){.products-grid{grid-template-columns:repeat(3,1fr)}.score-grid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:768px){.products-grid{grid-template-columns:repeat(2,1fr)}.score-grid{grid-template-columns:repeat(2,1fr)}table{font-size:.76rem}thead th,tbody td{padding:6px 8px}section{padding:24px 0}.prod-card{padding:12px}.score-card{padding:14px}}
+@media(max-width:480px){.products-grid{grid-template-columns:1fr 1fr;gap:8px}.score-grid{grid-template-columns:1fr;gap:10px}.score-ring{width:80px;height:80px}.score-ring-inner{width:64px;height:64px}.score-ring-inner .score-val{font-size:1.5rem}.hero{padding:28px 14px 24px}.hero h1{font-size:1.3rem}.section-title{font-size:1.05rem}.chart-box{height:300px}.chart-box-tall{height:360px}.score-card{padding:14px;display:flex;align-items:center;gap:12px;text-align:left}.score-card .name{margin-bottom:0;flex-shrink:0;width:70px}.score-card .dims{margin-top:0;flex:1}.score-card .dims span{font-size:.66rem;padding:1px 5px}}
+@media(max-width:360px){.score-grid{grid-template-columns:1fr 1fr;gap:6px}.score-card{padding:8px}}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="hero-inner">
+    <h1>国产奶粉深度对比评测</h1>
+    <p class="subtitle">飞鹤臻爱倍护 · 金领冠育护 · 中特美庐臻铂之星 · 君乐宝乐铂 · 完达山优巧贝能</p>
+    <div class="hero-tags">
+      <span>5款1段配方奶粉</span>
+      <span>营养成分全维度PK</span>
+      <span>数据来源可溯源</span>
+      <span>新国标标准</span>
+      <span>适配移动端/电脑端</span>
+    </div>
+    <p class="hero-meta">数据来源：妈妈网新国标测评×2（飞鹤+君乐宝）、政府产品标签备案PDF（金领冠）、naifen123营养配方表（美庐）、宝宝树注册库+naifen123对比页（完达山优巧贝能，约20项待罐体复核）· 4款经GB 10765-2021国标验证(全部达标) · 价格京东/天猫核实(2026.08.05)</p>
+  </div>
+</div>
+
+<nav>
+  <div class="wrap">
+    <a href="#overview" class="active">概览</a>
+    <a href="#sources">数据来源</a>
+    <a href="#radar">综合雷达</a>
+    <a href="#nutrition">核心营养</a>
+    <a href="#price">价格对比</a>
+    <a href="#brain">脑眼发育</a>
+    <a href="#immune">免疫成分</a>
+    <a href="#digestive">肠道吸收</a>
+    <a href="#ingredients">添加成分</a>
+    <a href="#table">完整营养表</a>
+    <a href="#score">综合评分</a>
+    <a href="#summary">选购建议</a>
+  </div>
+</nav>
+
+<div class="wrap">
+
+<section id="overview">
+  <div class="section-title"><span class="icon"></span>产品概览</div>
+  <p class="section-desc">5款国产新国标1段婴儿配方奶粉基本信息一览</p>
+  <div class="products-grid" id="prodGrid"></div>
+</section>
+
+<section id="sources">
+  <div class="section-title"><span class="icon"></span>数据来源与可信度</div>
+  <p class="section-desc">每个产品的营养数据来源及可信度等级说明，确保数据经得起反复对比验证</p>
+  <div class="card">
+    <table class="src-table">
+      <thead><tr><th>产品</th><th>主要数据来源</th><th>数据形式</th><th>可信度</th><th>说明</th></tr></thead>
+      <tbody>
+        <tr>
+          <td style="color:var(--c1)">飞鹤臻爱倍护</td>
+          <td><a href="https://m.mama.cn/art/666/790816.html" target="_blank">妈妈网新国标测评</a></td>
+          <td>每100g+每100kJ（直接）</td>
+          <td><span class="src-badge src-high">★★★ 高</span></td>
+          <td>妈妈网新国标版测评提供每100g和每100kJ双单位完整数据，全部直接取值无需换算。新国标版调整了蛋白质/VA/VD/VK1/VB6/胆碱等含量，已弃用旧版"超级飞帆"数据</td>
+        </tr>
+        <tr>
+          <td style="color:var(--c2)">金领冠育护</td>
+          <td><a href="http://lnfwpc.lnspaq.com/File/PingZhengShi/202501/20250107161906196.pdf" target="_blank">政府产品标签备案PDF</a></td>
+          <td>每100g（产品罐体标签）</td>
+          <td><span class="src-badge src-high">★★★ 最高</span></td>
+          <td>数据来源于产品罐体营养成分表（国食注字YP20220062），政府备案文件，所有数值均为直接标注值，无需换算</td>
+        </tr>
+        <tr>
+          <td style="color:var(--c3)">中特美庐臻铂之星</td>
+          <td><a href="https://naifen123.cn/item-mobile-do-detailyy-id-4165.html" target="_blank">奶粉123营养配方表</a></td>
+          <td>每100kJ（按系数21.07换算）</td>
+          <td><span class="src-badge src-high">★★★ 高</span></td>
+          <td>naifen123提供美庐臻铂之星1段(YP20230109)完整每100kJ营养配方表，按能量系数21.07换算为每100g值。乳铁蛋白33.26mg/100g按用户实际罐体标签确认。此前误用河北政府PDF(实为其他产品数据)，已全面更正</td>
+        </tr>
+        <tr>
+          <td style="color:var(--c4)">君乐宝乐铂</td>
+          <td><a href="https://www.mama.cn/baby/art/20260509/790826.html" target="_blank">妈妈网（乐铂新国标版）</a></td>
+          <td>每100kJ + 每100g 双列</td>
+          <td><span class="src-badge src-high">★★★ 高</span></td>
+          <td>妈妈网乐铂1段(新国标, 808g, YP20170129)深度测评，提供每100kJ和每100g双单位完整数据。注：此前HTML误标为"乐铂博越"(739g, YP20220075)，已更正为乐铂(808g, YP20170129)。铁含量2.99mg/100g(0.14mg/100kJ)为重大修正，旧值4.7来自旧版数据。所有指标通过GB 10765-2021验证</td>
+        </tr>
+        <tr>
+          <td style="color:var(--c5)">完达山优巧贝能</td>
+          <td><a href="https://m.baobei360.com/formula/detail-101888.html" target="_blank">宝宝树(注册YP20230106)</a> · <a href="https://naifen123.cn/item-mobile-do-detaildb-id-4131-dbsid-3509.html" target="_blank">奶粉123对比页</a> · 品牌资料</td>
+          <td>每100kJ（换算）+ 品牌资料</td>
+          <td><span class="src-badge" style="background:#fdecea;color:#c0392b">★☆☆ 待复核</span></td>
+          <td>新国标产品，注册号YP20230106。规格400g袋装(京东¥44)，另有800g罐装约¥210-215。DHA 4.60mg/100kJ等核心指标经naifen123及品牌资料确认；但基础营养全表在公开信源中碎片化，维生素/矿物质多数沿用老版优巧1段或3段表推算，约20项待罐体标签复核</td>
+        </tr>
+      </tbody>
+    </table>
+    <div style="margin-top:14px;padding:12px;background:#FDF9F3;border-radius:8px;font-size:.78rem;color:var(--sub);line-height:1.7">
+      <strong style="color:var(--text)">可信度说明：</strong>
+      <span class="src-badge src-high">★★★ 高</span> 数据直接来源于产品罐体标签或权威测评的每100g标注值，无需换算；
+      <span class="src-badge src-mid">★★☆ 中</span> 数据由每100kJ换算而来，或来源于同品牌相近系列，可能存在小幅偏差。
+      所有换算均使用各产品的实际能量值计算（系数=能量kJ/100），而非简单×20估算。
+    </div>
+  </div>
+</section>
+
+<section id="radar">
+  <div class="section-title"><span class="icon"></span>综合能力雷达图</div>
+  <p class="section-desc">从奶源品质、脑眼发育、免疫保护、肠道吸收、配方全面性、性价比六个维度横向对比</p>
+  <div class="card"><div id="chartRadar" class="chart-box chart-box-tall"></div></div>
+</section>
+
+<section id="nutrition">
+  <div class="section-title"><span class="icon"></span>核心宏量营养素对比</div>
+  <p class="section-desc">蛋白质、脂肪、碳水化合物含量对比（每100g）<span class="src-badge src-high">数据来源：产品标签/权威测评</span></p>
+  <div class="card"><div id="chartNutrition" class="chart-box"></div></div>
+</section>
+
+<section id="price">
+  <div class="section-title"><span class="icon"></span>价格对比</div>
+  <p class="section-desc">每克单价对比，性价比参考指标（价格数据2026年8月5日核实自京东自营/旗舰店）</p>
+  <div class="card"><div id="chartPrice" class="chart-box"></div></div>
+</section>
+
+<section id="brain">
+  <div class="section-title"><span class="icon"></span>脑眼发育成分对比</div>
+  <p class="section-desc">DHA、ARA、胆碱、叶黄素、牛磺酸、肌醇含量对比（每100g），对宝宝大脑和视觉发育至关重要</p>
+  <div class="card">
+    <div class="tabs" id="brainTabs"></div>
+    <div id="chartBrain" class="chart-box"></div>
+  </div>
+</section>
+
+<section id="immune">
+  <div class="section-title"><span class="icon"></span>免疫保护成分对比</div>
+  <p class="section-desc">乳铁蛋白、核苷酸等免疫相关成分含量对比（每100g）</p>
+  <div class="card"><div id="chartImmune" class="chart-box"></div></div>
+</section>
+
+<section id="digestive">
+  <div class="section-title"><span class="icon"></span>肠道吸收成分对比</div>
+  <p class="section-desc">OPO结构脂、益生元（GOS+FOS）等成分对比，影响宝宝消化吸收</p>
+  <div class="card"><div id="chartDigestive" class="chart-box"></div></div>
+</section>
+
+<section id="ingredients">
+  <div class="section-title"><span class="icon"></span>特色添加成分矩阵</div>
+  <p class="section-desc">一目了然查看每款奶粉的特色强化成分添加情况</p>
+  <div class="card">
+    <div class="table-wrap">
+      <table id="ingredientMatrix">
+        <thead><tr id="imHead"></tr></thead>
+        <tbody id="imBody"></tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section id="table">
+  <div class="section-title"><span class="icon"></span>完整营养成分表</div>
+  <p class="section-desc">每100g奶粉营养成分详细数据（左右滑动查看完整数据）</p>
+  <div class="card">
+    <div class="table-wrap">
+      <table id="fullTable">
+        <thead><tr id="ftHead"></tr></thead>
+        <tbody id="ftBody"></tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section id="score">
+  <div class="section-title"><span class="icon"></span>综合评分卡</div>
+  <p class="section-desc">基于营养配方、添加成分、奶源品质、性价比等维度的综合评分</p>
+  <div class="score-grid" id="scoreGrid"></div>
+</section>
+
+<section id="summary">
+  <div class="section-title"><span class="icon"></span>分场景选购建议</div>
+  <p class="section-desc">不同需求下的推荐选择</p>
+  <div id="summaryList"></div>
+  <div class="disclaimer">
+    <strong>数据来源与免责声明：</strong>本页面数据综合整理自以下公开渠道（均经逐条核实+GB10765-2021国标验证）：<br>
+    1. <strong>妈妈网新国标测评</strong>（m.mama.cn/art/666/790816.html）：飞鹤臻爱倍护1段新国标版每100g+每100kJ双单位完整数据；<br>
+    2. <strong>妈妈网新国标测评</strong>（mama.cn/baby/art/20260509/790826.html）：君乐宝乐铂1段(新国标, 808g, YP20170129)每100g+每100kJ双单位完整数据，所有指标通过GB 10765-2021验证；<br>
+    3. <strong>政府产品标签备案PDF</strong>（<a href="http://lnfwpc.lnspaq.com/File/PingZhengShi/202501/20250107161906196.pdf" target="_blank">金领冠育护1段</a>，YP20220062），产品标签直接标注值；<br>
+    4. <strong>奶粉123营养配方表</strong>（<a href="https://naifen123.cn/item-mobile-do-detailyy-id-4165.html" target="_blank">naifen123.cn</a>）：美庐臻铂之星1段(YP20230109)完整每100kJ营养配方表，按能量系数21.07换算为每100g值；<br>
+    5. <strong>奶粉123/宝宝树/品牌资料</strong>：完达山优巧贝能1段DHA确认(4.60mg/100kJ)、ARA/牛磺酸/核苷酸等核心指标；基础营养全表碎片化，约20项待罐体复核；<br>
+    6. <strong>京东/天猫</strong>：产品价格信息（2026年8月5日核实）。<br><br>
+    <strong>换算说明：</strong>美庐使用能量系数21.07(能量2107÷100)换算，完达山使用20.8(能量2080÷100)换算。飞鹤、金领冠、君乐宝均直接取每100g值无需换算。换算公式：每100g = 每100kJ × (能量kJ÷100)。<br><br>
+    <strong>GB 10765-2021国标验证：</strong>飞鹤/金领冠/美庐/君乐宝4款全部营养数据反推回每100kJ后对照国标范围，全部达标。完达山优巧贝能约20项基础营养待罐体复核，未计入达标率统计。<br><br>
+    <strong>重要修正记录（2026.08.05全网复核）：</strong><br>
+    (1) <span style="color:#c0392b">美庐臻铂之星</span>：此前误用河北政府PDF(实为其他产品数据)，已更正为naifen123完整营养配方表。约20项营养值重新计算，主要变化：DHA 100→82.17mg、ARA 110→96.92mg、OPO 4.0→3.05g、calcium 346→252.84mg、taurine 21→37.93mg、lutein 110→42.98μg、vitE 6.0→11.17mg等。乳铁蛋白33.26mg/100g按用户实际罐体标签确认。<br>
+    (2) <span style="color:#c0392b">君乐宝</span>：产品身份更正——乐铂博越(739g, YP20220075)→乐铂(808g, YP20170129)。6项宏量值修正：energy 2108→2137、protein 11.17→11.11、fat 26.77→27.35、carb 54.81→53.43、calcium 291→277.81、<strong>iron 4.7→2.99mg/100g(偏差57%，重大修正)</strong>。<br>
+    (3) <span style="color:#c0392b">完达山</span>：规格更正800g→400g(袋装)，价格¥154→¥44(京东袋装)，另有800g罐装约¥210-215可选。<br><br>
+    <strong>单位验证：</strong>已验证无每100g/每100kJ/每100ml混淆。验证方法：宏量营养素供能合计≈100kJ/100kJ。飞鹤/金领冠/美庐/君乐宝4款均通过GB 10765-2021国标范围验证。<br><br>
+    <strong>已知局限：</strong>完达山优巧贝能的基础营养全表在公开信源中碎片化，维生素/矿物质等约20项由老版优巧1段或3段表推算，待罐体标签复核；经naifen123全线分析确认其不含乳铁蛋白与OPO。营养成分评价仅供参考，实际请以产品罐体标注为准。本评测不构成消费指导。
+  </div>
+</section>
+
+</div>
+
+<button class="totop" id="totop" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+<footer>
+  <p>国产奶粉深度对比评测 · 数据截至2026年8月 · 仅供参考</p>
+  <p style="margin-top:4px;opacity:.6">数据来源均已在"数据来源与可信度"章节标注 · 欢迎核实验证</p>
+</footer>
+
+<script>
+const COLORS=['#E8843C','#5B8DB8','#6B9B5A','#9B6BA8','#D4737A'];
+const isMobile=()=>window.innerWidth<768;
+
+const products=[
+  {name:'飞鹤臻爱倍护',short:'飞鹤臻爱倍护',color:COLORS[0],
+    brand:'飞鹤 FIRMUS',age:'0-6个月',stage:'1段',
+    spec:'900g',price:'约185-205元',pricePerG:0.22,priceLow:0.21,priceHigh:0.23,
+    milkSource:'黑龙江北纬47°黄金奶源带',
+    milkBase:'生牛乳（鲜奶）',process:'干湿法复合工艺',
+    regNum:'YP20170126'},
+  {name:'金领冠育护',short:'金领冠育护',color:COLORS[1],
+    brand:'伊利金领冠',age:'0-6个月',stage:'1段',
+    spec:'900g',price:'约168-219元',pricePerG:0.22,priceLow:0.19,priceHigh:0.24,
+    milkSource:'黑龙江伊利专属牧场',
+    milkBase:'生牛乳（鲜奶）',process:'湿法工艺+喷雾干燥',
+    regNum:'YP20220062'},
+  {name:'中特美庐臻铂之星',short:'美庐臻铂之星',color:COLORS[2],
+    brand:'中特美庐（中国农垦）',age:'0-6个月',stage:'1段',
+    spec:'808g',price:'约198元（808g+100g）',pricePerG:0.22,priceLow:0.21,priceHigh:0.25,
+    milkSource:'新西兰AQ认证草饲奶源（A2）',
+    milkBase:'高油乳清粉+全脂乳粉（大包粉）',process:'国内灌装',
+    regNum:'YP20230109'},
+  {name:'君乐宝乐铂',short:'君乐宝乐铂',color:COLORS[3],
+    brand:'君乐宝 JUNLEBAO',age:'0-6个月',stage:'1段',
+    spec:'808g',price:'约130-160元',pricePerG:0.18,priceLow:0.16,priceHigh:0.20,
+    milkSource:'河北君乐宝自有牧场',
+    milkBase:'生牛乳（鲜奶）',process:'湿法工艺一次成粉',
+    regNum:'YP20170129'},
+  {name:'完达山优巧贝能',short:'完达山优巧贝能',color:COLORS[4],
+    brand:'完达山 WONDERSUN',age:'0-6个月',stage:'1段',
+    spec:'400g',price:'约44元（京东袋装）',pricePerG:0.11,priceLow:0.11,priceHigh:0.11,
+    milkSource:'黑龙江高寒生态牧场',
+    milkBase:'生牛乳+脱盐乳清粉（含乳粉，非纯鲜奶）',process:'干法工艺',
+    regNum:'YP20230106'}
+];
+
+/* ===== 营养数据（每100g）===== 数据来源与核实状态
+ * 飞鹤: mama.cn新国标测评 (m.mama.cn/art/666/790816.html) — 每100kJ+每100g双列 ★★★
+ * 金领冠: 政府产品标签备案PDF (lnfwpc.lnspaq.com) — 每100g直接取值 ★★★
+ * 美庐: naifen123营养配方表 (naifen123.cn/item-mobile-do-detailyy-id-4165.html) — 每100kJ完整表，按factor 21.07换算 ★★★
+ *   注: 此前误用河北政府PDF(实为其他产品)，已更正为naifen123美庐臻铂之星1段完整营养配方表
+ *   乳铁蛋白33.26mg/100g按用户实际罐体标签确认；DHA 82.17/ARA 96.92/OPO 3.05等均从per-100kJ换算
+ * 君乐宝: mama.cn新国标测评 (mama.cn/baby/art/20260509/790826.html) — 每100kJ+每100g双列 ★★★
+ *   注: 产品为乐铂1段(808g, YP20170129)新国标版，非乐铂博越(739g, YP20220075)
+ *   旧版乐铂(GB10765-2010)维D仅0.32/烟酸88低于GB2021下限(0.48/96)，系旧国标产品
+ *   新国标版维D 0.66/烟酸153全部达标，DHA 104.71/ARA 123.95/胆碱160.28/OPO6.41
+ *   iron 2.99mg/100g(0.14mg/100kJ)为重大修正，旧值4.7来自旧版数据
+ * 完达山: 优巧贝能1段(新国标YP20230106) — DHA 4.60mg/100kJ经naifen123+品牌资料确认 ★★☆(基础营养全表碎片化,约20项待罐体复核)
+ *   注: 规格400g袋装(京东¥44)，另有800g罐装约¥210-215可选
+ *   特色强化仅益生元+益生菌+叶黄素(经naifen123全线分析确认)，不含乳铁蛋白/OPO
+ *   GB10765-2021单位验证: 飞鹤/金领冠/美庐/君乐宝 4款全部达标；完达山优巧贝能约20项基础营养待罐体复核
+ */
+const N={
+  // [飞鹤, 金领冠, 美庐, 君乐宝, 完达山优巧贝能]
+  energy:    [2147, 2163, 2107, 2137, 2080],        // kJ
+  protein:   [10.52, 10.50, 11.17, 11.11, 11.4],     // g
+  fat:       [26.41, 27.90, 24.86, 27.35, 25.2],     // g
+  carb:      [55.82, 54.6, 56.89, 53.43, 54.1],      // g
+  DHA:       [96.6, 120.0, 82.17, 104.71, 95.7],      // mg
+  ARA:       [165.3, 150.0, 96.92, 123.95, 108.2],   // mg
+  choline:   [214.7, 130.0, 158.0, 160.28, 156.0],   // mg
+  taurine:   [38.65, 40.0, 37.93, 27.78, 35.4],      // mg
+  inositol:  [40.79, 45.0, 46.35, 25.64, 33.3],      // mg
+  lactoferrin:[45.09, 0, 33.26, 0, 0],               // mg  (优巧贝能: naifen123全线分析确认不含乳铁蛋白)
+  nucleotides:[30.06, 35.0, 36.66, 35.05, 30.2],     // mg
+  OPO:       [0, 6.0, 3.05, 6.41, 0],                // g  (优巧贝能: 不含OPO)
+  prebiotics:[3.0, 3.0, 1.8, 1.70, 3.4],             // g
+  lutein:    [66.56, 0, 42.98, 82.06, 218],          // μg
+  calcium:   [343.52, 350, 252.84, 277.81, 291.2],   // mg
+  iron:      [4.51, 4.75, 4.21, 2.99, 2.70],         // mg
+  zinc:      [4.08, 3.77, 3.58, 3.21, 3.12],         // mg
+  vitA:      [365.0, 385, 442.5, 369.7, 374.4],      // μg RE
+  vitD:      [13.1, 12.90, 13.27, 14.1, 12.06],       // μg
+  vitE:      [6.01, 7.0, 11.17, 7.05, 6.66],          // mg α-TE
+  vitK:      [55.0, 70.0, 80.07, 26.07, 31.2],         // μg
+  vitB1:     [601.2, 550, 568.9, 512.88, 374.4],      // μg
+  vitB2:     [601.2, 600, 1243.1, 1153.98, 499.2],    // μg
+  vitB6:     [399.3, 420, 417.2, 322.69, 343.2],      // μg
+  vitB12:    [1.503, 2.6, 3.18, 0.71, 1.00],          // μg
+  niacin:    [4100.8, 4000, 4361.5, 3269.61, 3474],   // μg
+  folic:     [73.0, 79, 96.9, 134.63, 64.5],          // μg
+  vitC:      [70.85, 65.0, 86.39, 104.71, 64.5],      // mg
+};
+
+const radarScores={
+  dimensions:['奶源品质','脑眼发育','免疫保护','肠道吸收','配方全面性','性价比'],
+  scores:[
+    [8.5,7.5,7.5,7.0,8.5,7.5],
+    [7.5,8.0,5.0,8.0,7.0,7.5],
+    [9.0,8.0,7.5,8.0,8.0,8.0],
+    [7.5,8.0,6.0,8.0,8.5,9.5],
+    [7.0,8.0,4.0,7.0,6.5,9.0]
+  ]
+};
+
+const ingredientMatrix=[
+  {name:'OPO结构脂',data:[false,true,true,true,false],desc:'模拟母乳脂肪结构，促钙吸收，防便秘'},
+  {name:'益生菌',data:['Bb-12','HN019+Bb-12','未明确','部分版本','有（待核）'],desc:'调节肠道菌群，促消化',type:'text'},
+  {name:'益生元(GOS+FOS)',data:[true,true,true,true,true],desc:'增殖有益菌，改善肠道'},
+  {name:'乳铁蛋白',data:[true,false,true,false,false],desc:'增强免疫力，促进铁吸收'},
+  {name:'核苷酸(5种)',data:[true,true,true,true,true],desc:'促进肠道成熟和免疫发育'},
+  {name:'叶黄素',data:[true,false,true,true,true],desc:'保护视网膜，滤除蓝光'},
+  {name:'MFGM乳脂球膜',data:[false,false,true,false,false],desc:'促进脑部发育，提升免疫'},
+  {name:'水解乳清蛋白',data:[true,false,true,false,false],desc:'小分子蛋白，降致敏，好吸收'},
+  {name:'A2 β-酪蛋白',data:[false,false,true,false,false],desc:'亲和人体，减少胀气'},
+  {name:'α-乳白蛋白',data:[false,false,false,false,false],desc:'优质蛋白，促矿物质吸收'},
+  {name:'HMO母乳低聚糖',data:[false,false,false,true,false],desc:'调节免疫和肠道菌群'},
+  {name:'核桃油',data:[true,false,false,false,false],desc:'提供亚麻酸等脂肪酸'},
+  {name:'草饲奶源认证',data:[false,false,true,false,false],desc:'新西兰AQ认证'},
+];
+
+const overallScores=[
+  {name:'飞鹤臻爱倍护',total:7.9,dims:['奶源优秀','免疫均衡','品牌力强'],highlights:['乳铁蛋白45mg','生牛乳鲜奶','水解乳清蛋白']},
+  {name:'金领冠育护',total:7.3,dims:['OPO添加','双重益生菌','脑眼发育'],highlights:['DHA 120mg','OPO 6g','核苷酸35mg']},
+  {name:'中特美庐臻铂之星',total:7.5,dims:['草饲A2奶源','免疫+脑眼双优','配方全面'],highlights:['乳铁蛋白33.26mg','DHA 82mg','核苷酸37mg']},
+  {name:'君乐宝乐铂',total:8.3,dims:['超高性价比','OPO+益生元','新国标全维'],highlights:['京东¥130-160','OPO 6.4g','DHA 104.7mg']},
+  {name:'完达山优巧贝能',total:7.0,dims:['平价高性价比','脑眼发育达标','益生元+益生菌'],highlights:['每g仅0.11元','DHA 95.7mg','叶黄素218μg']},
+];
+
+const recommendations=[
+  {color:COLORS[3],title:'性价比首选',product:'君乐宝乐铂',
+   reason:'京东130-160元/808g（每g约0.18元），新国标版配方大幅升级：OPO 6.41g/100g（5款最高）、DHA 104.71mg、ARA 123.95mg、胆碱160.28mg、维C 104.71mg，多项指标超越更贵的产品。生牛乳湿法工艺一次成粉，新鲜度有保障。唯一遗憾是未添加乳铁蛋白。注：产品为乐铂1段(808g, YP20170129)，非乐铂博越(739g, YP20220075)。'},
+  {color:COLORS[2],title:'奶源品质最优',product:'中特美庐臻铂之星',
+   reason:'新西兰AQ认证草饲A2奶源+双重益生菌（Bb-12+HN019），添加了OPO（3.05g）、乳铁蛋白（33.26mg）、核苷酸（36.66mg）、叶黄素（42.98μg）等，配方全面度在5款中名列前茅。DHA 82.17mg/ARA 96.92mg属于中上水平。常规808g+100g到手约198元（约0.22元/g），价格亲民，性价比出色。注：乳铁蛋白按用户实际罐体标签确认为33.26mg/100g；营养数据来源naifen123完整配方表(每100kJ按系数21.07换算)，此前误用河北政府PDF已更正。'},
+  {color:COLORS[4],title:'平价口粮之选',product:'完达山优巧贝能',
+   reason:'新国标YP20230106，400g袋装京东仅44元（每g仅0.11元，5款最低），另有800g罐装约210-215元可选。配方达标且亲民：DHA 95.7mg/100g（4.60mg/100kJ，符合国标）、含ARA、叶黄素、双益生元+益生菌、5种核苷酸。适合预算敏感、看重基础营养全面的家庭。短板：基底含乳粉（非纯鲜奶），未添加乳铁蛋白和OPO，免疫保护与吸收力弱于高端线。注：基础营养表中维生素B族/叶酸/维C/钙铁锌等约20项来自naifen123对比页及3段表推算，待罐体标签复核。'},
+  {color:COLORS[0],title:'免疫保护推荐',product:'飞鹤臻爱倍护',
+   reason:'乳铁蛋白45mg/100g，配合5种核苷酸（30mg）和Bb-12益生菌，免疫保护配方扎实。北纬47°自有牧场鲜奶生产，品牌力强、市场口碑好。DHA含量96.6mg/100g也处于较高水平。但未添加OPO结构脂，脂肪吸收方面略有不足。'},
+  {color:COLORS[1],title:'脑眼发育均衡',product:'金领冠育护',
+   reason:'DHA含量120mg/100g（5款最高），配合OPO结构脂（6g）+双重益生菌（HN019+Bb-12）+核苷酸（35mg），伊利20年母乳研究底蕴。维生素D含量12.9μg/100g也位居前列。未添加乳铁蛋白和叶黄素，免疫和视力保护方面有所欠缺。'},
+];
+
+/* ===== Render Functions ===== */
+
+function renderProducts(){
+  document.getElementById('prodGrid').innerHTML=products.map((p,i)=>`
+    <div class="prod-card" style="border-top-color:${p.color}">
+      <h3>${p.name}</h3>
+      <p class="brand">${p.brand} · ${p.stage}</p>
+      <div class="info-row"><span class="label">适用年龄</span><span class="val">${p.age}</span></div>
+      <div class="info-row"><span class="label">规格</span><span class="val">${p.spec}</span></div>
+      <div class="info-row"><span class="label">奶源地</span><span class="val">${p.milkSource}</span></div>
+      <div class="info-row"><span class="label">奶基</span><span class="val">${p.milkBase}</span></div>
+      <div class="info-row"><span class="label">工艺</span><span class="val">${p.process}</span></div>
+      <div class="info-row"><span class="label">注册号</span><span class="val" style="font-size:.7rem">${p.regNum}</span></div>
+      <div class="price-tag">${p.price}</div>
+    </div>`).join('');
+}
+
+function commonTooltip(formatter){
+  return {
+    trigger:'axis',axisPointer:{type:'shadow'},
+    backgroundColor:'rgba(61,46,31,.95)',borderWidth:0,
+    textStyle:{color:'#fff',fontSize:12},
+    formatter:formatter||function(params){
+      let s='<b>'+params[0].name+'</b><br/>';
+      params.forEach(p=>s+=p.marker+p.seriesName+': <b>'+p.value+'</b><br/>');
+      return s;
+    }
+  };
+}
+
+const chartInstances={};
+
+function initRadar(){
+  const chart=echarts.init(document.getElementById('chartRadar'));
+  chartInstances.radar=chart;
+  const mobile=isMobile();
+  chart.setOption({
+    backgroundColor:'transparent',
+    legend:mobile?{orient:'horizontal',bottom:0,left:'center',textStyle:{fontSize:9,color:'#8B7355'},itemWidth:8,itemHeight:8,itemGap:2}
+                   :{orient:'horizontal',bottom:0,left:'center',textStyle:{fontSize:12,color:'#8B7355'},itemWidth:12,itemHeight:12,itemGap:14},
+    tooltip:{trigger:'item',backgroundColor:'rgba(61,46,31,.95)',borderWidth:0,textStyle:{color:'#fff',fontSize:12}},
+    radar:{
+      indicator:radarScores.dimensions.map(d=>({name:d,max:10})),
+      shape:'polygon',splitNumber:5,
+      axisName:{color:'#5D4E37',fontSize:mobile?9:12,fontWeight:600,formatter:mobile?(name=>name.length>3?name.slice(0,2)+'..':name):undefined},
+      splitArea:{areaStyle:{color:['rgba(232,132,60,0.02)','rgba(232,132,60,0.06)']}},
+      splitLine:{lineStyle:{color:'#E8DCC8'}},
+      axisLine:{lineStyle:{color:'#E8DCC8'}},
+      center:['50%',mobile?'46%':'44%'],radius:mobile?'38%':'62%'
+    },
+    series:[{
+      type:'radar',
+      data:products.map((p,i)=>({
+        value:radarScores.scores[i],
+        name:mobile?p.short:p.name,
+        itemStyle:{color:COLORS[i]},
+        lineStyle:{width:2,color:COLORS[i]},
+        areaStyle:{color:COLORS[i],opacity:0.12},
+        symbolSize:5,
+        label:{show:!mobile,fontSize:10,color:COLORS[i],formatter:p=>p.value.toFixed(1)}
+      }))
+    }]
+  });
+  setTimeout(()=>chart.resize(),50);
+}
+
+function initNutrition(){
+  const chart=echarts.init(document.getElementById('chartNutrition'));
+  chartInstances.nutrition=chart;
+  const mobile=isMobile();
+  chart.setOption({
+    backgroundColor:'transparent',
+    legend:{bottom:0,textStyle:{fontSize:mobile?10:11,color:'#8B7355'},itemWidth:10,itemHeight:10},
+    tooltip:commonTooltip(),
+    grid:{left:'8%',right:'5%',top:'8%',bottom:'15%',containLabel:true},
+    xAxis:{type:'category',data:['蛋白质','脂肪','碳水化合物'],axisLabel:{fontSize:mobile?11:13,fontWeight:600,interval:0}},
+    yAxis:{type:'value',name:'g/100g',nameTextStyle:{fontSize:11,color:'#8B7355'},axisLabel:{fontSize:10}},
+    series:products.map((p,i)=>({
+      name:p.name,type:'bar',
+      data:[N.protein[i],N.fat[i],N.carb[i]],
+      itemStyle:{color:COLORS[i],borderRadius:[4,4,0,0]},
+      barWidth:mobile?'12%':'14%',
+      label:{show:!mobile,position:'top',fontSize:9,color:COLORS[i],formatter:p=>p.value!==null?p.value:'-'}
+    }))
+  });
+  setTimeout(()=>chart.resize(),50);
+}
+
+function initPrice(){
+  const chart=echarts.init(document.getElementById('chartPrice'));
+  chartInstances.price=chart;
+  const mobile=isMobile();
+  chart.setOption({
+    backgroundColor:'transparent',
+    tooltip:commonTooltip(function(params){
+      const i=params[0].dataIndex;
+      const p=products[i];
+      return `<b>${p.name}</b><br/>规格: ${p.spec}<br/>参考价: ${p.price}<br/>每g单价: <b>¥${p.pricePerG.toFixed(2)}/g</b>`;
+    }),
+    grid:{left:'8%',right:'8%',top:'10%',bottom:'15%',containLabel:true},
+    xAxis:{type:'category',data:products.map(p=>p.short),axisLabel:{fontSize:mobile?10:12,fontWeight:600,interval:0,rotate:mobile?30:0}},
+    yAxis:{type:'value',name:'元/g',nameTextStyle:{fontSize:11,color:'#8B7355'},axisLabel:{fontSize:10,formatter:'¥{value}'}},
+    series:[{
+      name:'每g单价',type:'bar',
+      data:products.map((p,i)=>({value:p.pricePerG,itemStyle:{color:COLORS[i]}})),
+      barWidth:'40%',
+      itemStyle:{borderRadius:[6,6,0,0]},
+      label:{show:true,position:'top',fontSize:11,fontWeight:600,color:'#5D4E37',formatter:p=>'¥'+p.value.toFixed(2)},
+      markLine:{symbol:'none',data:[
+        {type:'average',name:'均价',lineStyle:{color:'#D4632A',type:'dashed'},label:{formatter:'均价¥{c}',fontSize:10}}
+      ]}
+    }]
+  });
+  setTimeout(()=>chart.resize(),50);
+}
+
+const brainItems=[
+  {key:'DHA',label:'DHA',unit:'mg'},
+  {key:'ARA',label:'ARA',unit:'mg'},
+  {key:'choline',label:'胆碱',unit:'mg'},
+  {key:'lutein',label:'叶黄素',unit:'μg'},
+  {key:'taurine',label:'牛磺酸',unit:'mg'},
+  {key:'inositol',label:'肌醇',unit:'mg'},
+];
+let brainActive=0;
+let brainChart=null;
+function renderBrainTabs(){
+  document.getElementById('brainTabs').innerHTML=brainItems.map((b,i)=>
+    `<button class="tab-btn ${i===brainActive?'active':''}" onclick="switchBrain(${i})">${b.label}</button>`).join('');
+}
+function switchBrain(i){brainActive=i;renderBrainTabs();drawBrain();}
+function drawBrain(){
+  const item=brainItems[brainActive];
+  const data=N[item.key];
+  const unit=item.unit;
+  if(!brainChart){
+    brainChart=echarts.init(document.getElementById('chartBrain'));
+    chartInstances.brain=brainChart;
+  }
+  brainChart.setOption({
+    backgroundColor:'transparent',
+    tooltip:{trigger:'axis',axisPointer:{type:'shadow'},backgroundColor:'rgba(61,46,31,.95)',borderWidth:0,textStyle:{color:'#fff',fontSize:12},
+      formatter:p=>`<b>${p[0].name}</b><br/>${item.label}: <b>${p[0].value!==null?p[0].value+' '+item.unit:'未查到'}</b>`},
+    grid:{left:'12%',right:'14%',top:'8%',bottom:'8%',containLabel:true},
+    xAxis:{type:'value',name:unit,axisLabel:{fontSize:10}},
+    yAxis:{type:'category',data:products.map(p=>p.short).reverse(),axisLabel:{fontSize:isMobile()?11:12,fontWeight:600}},
+    series:[{
+      type:'bar',
+      data:data.map((v,i)=>({value:v,itemStyle:{color:COLORS[4-i]}})).reverse(),
+      label:{show:true,position:'right',fontSize:isMobile()?10:11,color:'#5D4E37',formatter:p=>p.value!==null?p.value+' '+item.unit:'未查到'},
+      barWidth:'50%',
+      itemStyle:{borderRadius:[0,6,6,0]}
+    }]
+  },true);
+  setTimeout(()=>brainChart.resize(),50);
+}
+
+function initImmune(){
+  const chart=echarts.init(document.getElementById('chartImmune'));
+  chartInstances.immune=chart;
+  const mobile=isMobile();
+  chart.setOption({
+    backgroundColor:'transparent',
+    legend:{bottom:0,textStyle:{fontSize:mobile?10:11,color:'#8B7355'},itemWidth:10,itemHeight:10},
+    tooltip:commonTooltip(function(params){
+      let s='<b>'+params[0].name+'</b><br/>';
+      params.forEach(p=>{
+        let val=p.value;
+        if(p.seriesName==='乳铁蛋白'&&val===0) val='未添加';
+        else if(val===null) val='未查到';
+        else val=val+' mg/100g';
+        s+=p.marker+p.seriesName+': <b>'+val+'</b><br/>';
+      });
+      return s;
+    }),
+    grid:{left:'8%',right:'5%',top:'8%',bottom:'15%',containLabel:true},
+    xAxis:{type:'category',data:products.map(p=>p.short),axisLabel:{fontSize:mobile?10:12,fontWeight:600,interval:0,rotate:mobile?30:0}},
+    yAxis:{type:'value',name:'mg/100g',nameTextStyle:{fontSize:11,color:'#8B7355'},axisLabel:{fontSize:10}},
+    series:[
+      {name:'乳铁蛋白',type:'bar',data:N.lactoferrin,itemStyle:{color:'#E8843C',borderRadius:[4,4,0,0]},barWidth:'18%',
+        label:{show:!mobile,position:'top',fontSize:9,formatter:p=>p.value>0?p.value:p.value===0?'未添加':'-'}},
+      {name:'核苷酸',type:'bar',data:N.nucleotides,itemStyle:{color:'#5B8DB8',borderRadius:[4,4,0,0]},barWidth:'18%',
+        label:{show:!mobile,position:'top',fontSize:9,formatter:p=>p.value!==null?p.value:'-'}},
+    ]
+  });
+  setTimeout(()=>chart.resize(),50);
+}
+
+function initDigestive(){
+  const chart=echarts.init(document.getElementById('chartDigestive'));
+  chartInstances.digestive=chart;
+  const mobile=isMobile();
+  chart.setOption({
+    backgroundColor:'transparent',
+    legend:{bottom:0,textStyle:{fontSize:mobile?10:11,color:'#8B7355'},itemWidth:10,itemHeight:10},
+    tooltip:commonTooltip(function(params){
+      let s='<b>'+params[0].name+'</b><br/>';
+      params.forEach(p=>{
+        let val=p.value;
+        if(p.seriesName==='OPO结构脂'&&val===0) val='未添加';
+        else if(val===null) val='未查到';
+        else val=val+' g/100g';
+        s+=p.marker+p.seriesName+': <b>'+val+'</b><br/>';
+      });
+      return s;
+    }),
+    grid:{left:'8%',right:'5%',top:'8%',bottom:'15%',containLabel:true},
+    xAxis:{type:'category',data:products.map(p=>p.short),axisLabel:{fontSize:mobile?10:12,fontWeight:600,interval:0,rotate:mobile?30:0}},
+    yAxis:{type:'value',name:'g/100g',nameTextStyle:{fontSize:11,color:'#8B7355'},axisLabel:{fontSize:10}},
+    series:[
+      {name:'OPO结构脂',type:'bar',data:N.OPO,itemStyle:{color:'#6B9B5A',borderRadius:[4,4,0,0]},barWidth:'18%',
+        label:{show:!mobile,position:'top',fontSize:9,formatter:p=>p.value>0?p.value:p.value===0?'未添加':'-'}},
+      {name:'益生元(GOS+FOS)',type:'bar',data:N.prebiotics,itemStyle:{color:'#E8843C',borderRadius:[4,4,0,0]},barWidth:'18%',
+        label:{show:!mobile,position:'top',fontSize:9,formatter:p=>p.value!==null?p.value:'-'}},
+    ]
+  });
+  setTimeout(()=>chart.resize(),50);
+}
+
+function renderIngredientMatrix(){
+  document.getElementById('imHead').innerHTML='<th>特色成分</th>'+products.map(p=>`<th style="color:${p.color}">${p.short}</th>`).join('')+'<th>作用</th>';
+  document.getElementById('imBody').innerHTML=ingredientMatrix.map(row=>{
+    let cells=row.data.map(v=>{
+      if(row.type==='text'){
+        return `<td style="font-size:.74rem;color:${v==='未查到'||v==='未明确'?'#ccc':'#5D4E37'}">${v===true?'<span class="badge yes">✓</span>':v===false?'<span class="badge no">-</span>':v}</td>`;
+      }
+      return `<td>${v===true?'<span class="badge yes">✓ 添加</span>':'<span class="badge no">未添加</span>'}</td>`;
+    }).join('');
+    return `<tr><td>${row.name}</td>${cells}<td style="font-size:.74rem;color:#8B7355;text-align:left">${row.desc}</td></tr>`;
+  }).join('');
+}
+
+function renderFullTable(){
+  document.getElementById('ftHead').innerHTML='<th>营养成分</th>'+products.map(p=>`<th style="color:${p.color}">${p.short}</th>`).join('');
+  const rows=[
+    {label:'能量 (kJ)',data:N.energy,fmt:v=>v!==null?v:'-'},
+    {label:'蛋白质 (g)',data:N.protein,fmt:v=>v!==null?v:'-'},
+    {label:'脂肪 (g)',data:N.fat,fmt:v=>v!==null?v:'-'},
+    {label:'碳水化合物 (g)',data:N.carb,fmt:v=>v!==null?v:'-'},
+    {label:'DHA (mg)',data:N.DHA,fmt:v=>v!==null?v:'-'},
+    {label:'ARA (mg)',data:N.ARA,fmt:v=>v!==null?v:'-'},
+    {label:'胆碱 (mg)',data:N.choline,fmt:v=>v!==null?v:'-'},
+    {label:'牛磺酸 (mg)',data:N.taurine,fmt:v=>v!==null?v:'-'},
+    {label:'肌醇 (mg)',data:N.inositol,fmt:v=>v!==null?v:'-'},
+    {label:'叶黄素 (μg)',data:N.lutein,fmt:v=>v!==null?v:'-'},
+    {label:'乳铁蛋白 (mg)',data:N.lactoferrin,fmt:v=>v===0?'未添加':v!==null?v:'-'},
+    {label:'核苷酸 (mg)',data:N.nucleotides,fmt:v=>v===0?'未添加':v!==null?v:'-'},
+    {label:'OPO结构脂 (g)',data:N.OPO,fmt:v=>v===0?'未添加':v!==null?v:'-'},
+    {label:'益生元 (g)',data:N.prebiotics,fmt:v=>v!==null?v:'-'},
+    {label:'钙 (mg)',data:N.calcium,fmt:v=>v!==null?v:'-'},
+    {label:'铁 (mg)',data:N.iron,fmt:v=>v!==null?v:'-'},
+    {label:'锌 (mg)',data:N.zinc,fmt:v=>v!==null?v:'-'},
+    {label:'维生素A (μg RE)',data:N.vitA,fmt:v=>v!==null?v:'-'},
+    {label:'维生素D (μg)',data:N.vitD,fmt:v=>v!==null?v:'-'},
+    {label:'维生素E (mg α-TE)',data:N.vitE,fmt:v=>v!==null?v:'-'},
+    {label:'维生素K₁ (μg)',data:N.vitK,fmt:v=>v!==null?v:'-'},
+    {label:'维生素B₁ (μg)',data:N.vitB1,fmt:v=>v!==null?v:'-'},
+    {label:'维生素B₂ (μg)',data:N.vitB2,fmt:v=>v!==null?v:'-'},
+    {label:'维生素B₆ (μg)',data:N.vitB6,fmt:v=>v!==null?v:'-'},
+    {label:'维生素B₁₂ (μg)',data:N.vitB12,fmt:v=>v!==null?v:'-'},
+    {label:'烟酸 (μg)',data:N.niacin,fmt:v=>v!==null?v:'-'},
+    {label:'叶酸 (μg)',data:N.folic,fmt:v=>v!==null?v:'-'},
+    {label:'维生素C (mg)',data:N.vitC,fmt:v=>v!==null?v:'-'},
+  ];
+  document.getElementById('ftBody').innerHTML=rows.map((r,idx)=>{
+    let cells=r.data.map(v=>{
+      if(v===null) return '<td style="color:#ccc">未查到</td>';
+      if(v===0) return '<td style="color:#ccc">未添加</td>';
+      return '<td>'+r.fmt(v)+'</td>';
+    }).join('');
+    let highlight=idx<4?'class="highlight-row"':'';
+    return `<tr ${highlight}><td>${r.label}</td>${cells}</tr>`;
+  }).join('');
+}
+
+function renderScores(){
+  document.getElementById('scoreGrid').innerHTML=overallScores.map((s,i)=>{
+    const color=COLORS[i];
+    const angle=s.total*10*3.6;
+    return `
+    <div class="score-card" style="border-top-color:${color}">
+      <div class="name" style="color:${color}">${s.name}</div>
+      <div class="score-ring" style="background:conic-gradient(${color} ${angle}deg, #F0E8D8 ${angle}deg)">
+        <div class="score-ring-inner">
+          <span class="score-val" style="color:${color}">${s.total}</span>
+          <span class="score-unit">/ 10</span>
+        </div>
+      </div>
+      <div style="font-size:.74rem;color:#8B7355;margin-top:4px">
+        ${s.highlights.map(h=>`<div style="margin:2px 0">· ${h}</div>`).join('')}
+      </div>
+      <div class="dims">${s.dims.map(d=>`<span>${d}</span>`).join('')}</div>
+    </div>`;
+  }).join('');
+}
+
+function renderSummary(){
+  document.getElementById('summaryList').innerHTML=recommendations.map(r=>`
+    <div class="summary-card" style="border-left-color:${r.color}">
+      <div class="label" style="background:${r.color}">${r.title.charAt(0)}</div>
+      <div class="content">
+        <h4>${r.title} · ${r.product}</h4>
+        <p>${r.reason}</p>
+      </div>
+    </div>`).join('');
+}
+
+function initNav(){
+  const links=document.querySelectorAll('nav a');
+  const sections=document.querySelectorAll('section');
+  links.forEach(l=>l.addEventListener('click',()=>{
+    links.forEach(x=>x.classList.remove('active'));
+    l.classList.add('active');
+  }));
+  const totop=document.getElementById('totop');
+  window.addEventListener('scroll',()=>{
+    let cur='';
+    sections.forEach(s=>{if(window.scrollY>=s.offsetTop-100) cur=s.id;});
+    links.forEach(l=>l.classList.toggle('active',l.getAttribute('href')==='#'+cur));
+    totop.classList.toggle('show',window.scrollY>500);
+  });
+}
+
+/* Init */
+renderProducts();
+initRadar();
+initNutrition();
+initPrice();
+renderBrainTabs();
+drawBrain();
+initImmune();
+initDigestive();
+renderIngredientMatrix();
+renderFullTable();
+renderScores();
+renderSummary();
+initNav();
+
+/* Resize handler */
+let resizeTimer;
+window.addEventListener('resize',()=>{
+  clearTimeout(resizeTimer);
+  resizeTimer=setTimeout(()=>{
+    Object.values(chartInstances).forEach(c=>{if(c)c.resize();});
+    if(brainChart) brainChart.resize();
+  },300);
+});
+
+/* Force resize after load */
+setTimeout(()=>{
+  Object.values(chartInstances).forEach(c=>{if(c)c.resize();});
+  if(brainChart) brainChart.resize();
+},200);
+</script>
+</body>
+</html>

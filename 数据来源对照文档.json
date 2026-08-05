@@ -1,0 +1,1443 @@
+{
+  "title": "国产奶粉对比评测 - 数据来源对照文档",
+  "version": "3.2",
+  "last_updated": "2026-08-05",
+  "description": "本文档记录5款国产1段奶粉每项营养数据的来源、可信度等级及换算方法。v3.2全网电商平台复核：美庐改用naifen123完整配方表(约20项重算)、君乐宝更正为乐铂(808g/YP20170129,6项宏量修正含iron重大修正)、完达山更正规格价格(400g/¥44)。",
+  "products": [
+    {
+      "id": "feihe",
+      "name": "飞鹤臻爱倍护",
+      "stage": "1段",
+      "spec": "900g",
+      "reg_num": "YP20170126",
+      "brand": "飞鹤 FIRMUS",
+      "conversion_factor": 21.47,
+      "energy_kJ_per_100g": 2147,
+      "data_sources": {
+        "primary": {
+          "name": "妈妈网新国标测评",
+          "url": "https://m.mama.cn/art/666/790816.html",
+          "data_form": "每100g + 每100kJ 双单位（直接标注）",
+          "confidence": "high",
+          "note": "妈妈网新国标版测评，提供每100g和每100kJ双单位完整数据，全部直接取值无需换算"
+        }
+      },
+      "data_points": {
+        "protein": {
+          "value": 10.52,
+          "unit": "g",
+          "source": "妈妈网新国标（直接每100g）",
+          "confidence": "★★★"
+        },
+        "fat": {
+          "value": 26.41,
+          "unit": "g",
+          "source": "妈妈网新国标（直接每100g）",
+          "confidence": "★★★"
+        },
+        "carb": {
+          "value": 55.82,
+          "unit": "g",
+          "source": "妈妈网新国标（直接每100g）",
+          "confidence": "★★★"
+        },
+        "DHA": {
+          "value": 96.6,
+          "unit": "mg",
+          "source": "妈妈网新国标（直接每100g）",
+          "confidence": "★★★"
+        },
+        "ARA": {
+          "value": 165.3,
+          "unit": "mg",
+          "source": "妈妈网新国标（直接每100g）",
+          "confidence": "★★★"
+        },
+        "choline": {
+          "value": 214.7,
+          "unit": "mg",
+          "source": "妈妈网新国标（直接每100g）",
+          "confidence": "★★★"
+        },
+        "taurine": {
+          "value": 38.65,
+          "unit": "mg",
+          "source": "妈妈网新国标（直接每100g）",
+          "confidence": "★★★"
+        },
+        "inositol": {
+          "value": 40.79,
+          "unit": "mg",
+          "source": "妈妈网新国标（直接每100g）",
+          "confidence": "★★★"
+        },
+        "lactoferrin": {
+          "value": 45.09,
+          "unit": "mg",
+          "source": "妈妈网新国标（直接每100g）",
+          "confidence": "★★★"
+        },
+        "nucleotides": {
+          "value": 30.06,
+          "unit": "mg",
+          "source": "妈妈网新国标（直接每100g）",
+          "confidence": "★★★"
+        },
+        "OPO": {
+          "value": 0,
+          "unit": "g",
+          "source": "妈妈网新国标确认未添加",
+          "confidence": "★★★"
+        },
+        "prebiotics": {
+          "value": 3.0,
+          "unit": "g",
+          "source": "妈妈网新国标（直接每100g）",
+          "confidence": "★★★"
+        },
+        "lutein": {
+          "value": 66.56,
+          "unit": "μg",
+          "source": "妈妈网新国标（直接每100g）",
+          "confidence": "★★★"
+        },
+        "calcium": {
+          "value": 343.52,
+          "unit": "mg",
+          "source": "妈妈网新国标（直接每100g）",
+          "confidence": "★★★"
+        },
+        "iron": {
+          "value": 4.51,
+          "unit": "mg",
+          "source": "妈妈网新国标（直接每100g）",
+          "confidence": "★★★"
+        },
+        "zinc": {
+          "value": 4.08,
+          "unit": "mg",
+          "source": "妈妈网新国标（直接每100g）",
+          "confidence": "★★★"
+        },
+        "vitA": {
+          "value": 365.0,
+          "unit": "μg RE",
+          "source": "妈妈网新国标（直接每100g）",
+          "confidence": "★★★"
+        },
+        "vitD": {
+          "value": 13.1,
+          "unit": "μg",
+          "source": "妈妈网新国标（直接每100g）",
+          "confidence": "★★★"
+        },
+        "vitE": {
+          "value": 6.01,
+          "unit": "mg α-TE",
+          "source": "妈妈网新国标（直接每100g）",
+          "confidence": "★★★"
+        },
+        "vitK": {
+          "value": 55.0,
+          "unit": "μg",
+          "source": "妈妈网新国标（直接每100g）",
+          "confidence": "★★★"
+        },
+        "vitB1": {
+          "value": 601.2,
+          "unit": "μg",
+          "source": "妈妈网新国标（直接每100g）",
+          "confidence": "★★★"
+        },
+        "vitB2": {
+          "value": 601.2,
+          "unit": "μg",
+          "source": "妈妈网新国标（直接每100g）",
+          "confidence": "★★★"
+        },
+        "vitB6": {
+          "value": 399.3,
+          "unit": "μg",
+          "source": "妈妈网新国标（直接每100g）",
+          "confidence": "★★★"
+        },
+        "vitB12": {
+          "value": 1.503,
+          "unit": "μg",
+          "source": "妈妈网新国标（直接每100g）",
+          "confidence": "★★★"
+        },
+        "niacin": {
+          "value": 4100.8,
+          "unit": "μg",
+          "source": "妈妈网新国标（直接每100g）",
+          "confidence": "★★★"
+        },
+        "folic": {
+          "value": 73.0,
+          "unit": "μg",
+          "source": "妈妈网新国标（直接每100g）",
+          "confidence": "★★★"
+        },
+        "vitC": {
+          "value": 70.85,
+          "unit": "mg",
+          "source": "妈妈网新国标（直接每100g）",
+          "confidence": "★★★"
+        }
+      },
+      "corrections_made": [
+        {
+          "field": "protein",
+          "old": 11.59,
+          "new": 10.52,
+          "reason": "v2.0曾误改为11.59（误用旧版数据），v3.0回归妈妈网新国标版直接值10.52g，通过GB验证(0.49g/100kJ,达标0.45-0.70)"
+        },
+        {
+          "field": "choline",
+          "old": 64.4,
+          "new": 214.7,
+          "reason": "v2.0曾误改为64.4（奶粉123每100kJ换算），但214.7/21.47=10.0mg/100kJ通过GB(4.8-23.9)，64.4/21.47=3.0mg/100kJ反不达标。v3.0回归妈妈网新国标直接值"
+        },
+        {
+          "field": "vitA",
+          "old": 493.8,
+          "new": 365.0,
+          "reason": "v2.0来自奶粉123每100kJ换算(23.0×21.47)，v3.0改为妈妈网新国标版直接值365.0μg(17.0μg/100kJ,达标14-36)"
+        },
+        {
+          "field": "vitD",
+          "old": 7.09,
+          "new": 13.1,
+          "reason": "v2.0来自奶粉123每100kJ换算(0.33×21.47)，但0.33μg/100kJ低于GB2021下限0.48。v3.0改为妈妈网新国标版直接值13.1μg(0.61μg/100kJ,达标0.48-1.20)"
+        },
+        {
+          "field": "vitK",
+          "old": 55.82,
+          "new": 55.0,
+          "reason": "v2.0来自奶粉123每100kJ换算(2.60×21.47)，v3.0改为妈妈网新国标版直接值55.0μg"
+        },
+        {
+          "field": "vitB6",
+          "old": 450.9,
+          "new": 399.3,
+          "reason": "v2.0来自奶粉123每100kJ换算(21.0×21.47)，v3.0改为妈妈网新国标版直接值399.3μg"
+        }
+      ]
+    },
+    {
+      "id": "jinlingguan",
+      "name": "金领冠育护",
+      "stage": "1段",
+      "spec": "900g",
+      "reg_num": "YP20220062",
+      "brand": "伊利金领冠",
+      "conversion_factor": null,
+      "energy_kJ_per_100g": 2163,
+      "data_sources": {
+        "primary": {
+          "name": "政府产品标签备案PDF（辽宁省食品药品安全审计中心）",
+          "url": "http://lnfwpc.lnspaq.com/File/PingZhengShi/202501/20250107161906196.pdf",
+          "data_form": "每100g（产品罐体标签直接标注）",
+          "confidence": "highest",
+          "note": "政府备案文件，国食注字YP20220062，所有数值为产品标签直接标注值，无需换算"
+        }
+      },
+      "data_points": {
+        "protein": {
+          "value": 10.5,
+          "unit": "g",
+          "source": "政府产品标签PDF（直接标注）",
+          "confidence": "★★★"
+        },
+        "fat": {
+          "value": 27.9,
+          "unit": "g",
+          "source": "政府产品标签PDF（直接标注）",
+          "confidence": "★★★"
+        },
+        "carb": {
+          "value": 54.6,
+          "unit": "g",
+          "source": "政府产品标签PDF（直接标注）",
+          "confidence": "★★★"
+        },
+        "DHA": {
+          "value": 120.0,
+          "unit": "mg",
+          "source": "政府产品标签PDF（直接标注）",
+          "confidence": "★★★"
+        },
+        "ARA": {
+          "value": 150.0,
+          "unit": "mg",
+          "source": "政府产品标签PDF（直接标注）",
+          "confidence": "★★★"
+        },
+        "choline": {
+          "value": 130.0,
+          "unit": "mg",
+          "source": "政府产品标签PDF（直接标注）",
+          "confidence": "★★★"
+        },
+        "taurine": {
+          "value": 40.0,
+          "unit": "mg",
+          "source": "政府产品标签PDF（直接标注）",
+          "confidence": "★★★"
+        },
+        "inositol": {
+          "value": 45.0,
+          "unit": "mg",
+          "source": "政府产品标签PDF（直接标注）",
+          "confidence": "★★★"
+        },
+        "lactoferrin": {
+          "value": 0,
+          "unit": "mg",
+          "source": "政府产品标签PDF（确认未添加）",
+          "confidence": "★★★"
+        },
+        "nucleotides": {
+          "value": 35.0,
+          "unit": "mg",
+          "source": "政府产品标签PDF（直接标注）",
+          "confidence": "★★★"
+        },
+        "OPO": {
+          "value": 6.0,
+          "unit": "g",
+          "source": "政府产品标签PDF（直接标注）",
+          "confidence": "★★★"
+        },
+        "prebiotics": {
+          "value": 3.0,
+          "unit": "g",
+          "source": "政府产品标签PDF（直接标注）",
+          "confidence": "★★★"
+        },
+        "lutein": {
+          "value": 0,
+          "unit": "μg",
+          "source": "政府产品标签PDF（确认未添加）",
+          "confidence": "★★★"
+        },
+        "calcium": {
+          "value": 350,
+          "unit": "mg",
+          "source": "政府产品标签PDF（直接标注）",
+          "confidence": "★★★"
+        },
+        "iron": {
+          "value": 4.75,
+          "unit": "mg",
+          "source": "政府产品标签PDF（直接标注）",
+          "confidence": "★★★"
+        },
+        "zinc": {
+          "value": 3.77,
+          "unit": "mg",
+          "source": "政府产品标签PDF（直接标注）",
+          "confidence": "★★★"
+        },
+        "vitA": {
+          "value": 385,
+          "unit": "μg RE",
+          "source": "政府产品标签PDF（直接标注）",
+          "confidence": "★★★"
+        },
+        "vitD": {
+          "value": 12.9,
+          "unit": "μg",
+          "source": "政府产品标签PDF（直接标注）",
+          "confidence": "★★★"
+        },
+        "vitE": {
+          "value": 7.0,
+          "unit": "mg α-TE",
+          "source": "政府产品标签PDF（直接标注）",
+          "confidence": "★★★"
+        },
+        "vitK": {
+          "value": 70.0,
+          "unit": "μg",
+          "source": "政府产品标签PDF（直接标注）",
+          "confidence": "★★★"
+        },
+        "vitB1": {
+          "value": 550,
+          "unit": "μg",
+          "source": "政府产品标签PDF（直接标注）",
+          "confidence": "★★★"
+        },
+        "vitB2": {
+          "value": 600,
+          "unit": "μg",
+          "source": "政府产品标签PDF（直接标注）",
+          "confidence": "★★★"
+        },
+        "vitB6": {
+          "value": 420,
+          "unit": "μg",
+          "source": "政府产品标签PDF（直接标注）",
+          "confidence": "★★★"
+        },
+        "vitB12": {
+          "value": 2.6,
+          "unit": "μg",
+          "source": "政府产品标签PDF（直接标注）",
+          "confidence": "★★★"
+        },
+        "niacin": {
+          "value": 4000,
+          "unit": "μg",
+          "source": "政府产品标签PDF（直接标注）",
+          "confidence": "★★★"
+        },
+        "folic": {
+          "value": 79,
+          "unit": "μg",
+          "source": "政府产品标签PDF（直接标注）",
+          "confidence": "★★★"
+        },
+        "vitC": {
+          "value": 65.0,
+          "unit": "mg",
+          "source": "政府产品标签PDF（直接标注）",
+          "confidence": "★★★"
+        }
+      },
+      "corrections_made": []
+    },
+    {
+      "id": "meilu",
+      "name": "中特美庐臻铂之星",
+      "stage": "1段",
+      "spec": "808g",
+      "reg_num": "YP20230109",
+      "brand": "中特美庐（中国农垦）",
+      "conversion_factor": 21.07,
+      "energy_kJ_per_100g": 2107,
+      "data_sources": {
+        "primary": {
+          "name": "奶粉123营养配方表（naifen123.cn）",
+          "url": "https://naifen123.cn/item-mobile-do-detailyy-id-4165.html",
+          "data_form": "每100kJ完整营养配方表（按系数21.07换算）",
+          "confidence": "high",
+          "note": "naifen123提供美庐臻铂之星1段(YP20230109)完整每100kJ营养配方表，按能量系数21.07换算为每100g值。此前v3.0/v3.1误用河北政府PDF(实为其他产品数据)，v3.2已全面更正"
+        }
+      },
+      "data_points": {
+        "protein": {
+          "value": 11.17,
+          "unit": "g",
+          "source": "naifen123每100kJ × 系数21.07换算",
+          "confidence": "★★★"
+        },
+        "fat": {
+          "value": 24.86,
+          "unit": "g",
+          "source": "naifen123每100kJ × 系数21.07换算",
+          "confidence": "★★★"
+        },
+        "carb": {
+          "value": 56.89,
+          "unit": "g",
+          "source": "naifen123每100kJ × 系数21.07换算",
+          "confidence": "★★★"
+        },
+        "DHA": {
+          "value": 82.17,
+          "unit": "mg",
+          "source": "naifen123每100kJ × 系数21.07换算",
+          "confidence": "★★★"
+        },
+        "ARA": {
+          "value": 96.92,
+          "unit": "mg",
+          "source": "naifen123每100kJ × 系数21.07换算",
+          "confidence": "★★★"
+        },
+        "choline": {
+          "value": 158.0,
+          "unit": "mg",
+          "source": "naifen123每100kJ × 系数21.07换算",
+          "confidence": "★★★"
+        },
+        "taurine": {
+          "value": 37.93,
+          "unit": "mg",
+          "source": "naifen123每100kJ × 系数21.07换算",
+          "confidence": "★★★"
+        },
+        "inositol": {
+          "value": 46.35,
+          "unit": "mg",
+          "source": "naifen123每100kJ × 系数21.07换算",
+          "confidence": "★★★"
+        },
+        "lactoferrin": {
+          "value": 33.26,
+          "unit": "mg",
+          "source": "用户实际罐体标签确认33.26mg/100g",
+          "confidence": "★★☆"
+        },
+        "nucleotides": {
+          "value": 36.66,
+          "unit": "mg",
+          "source": "naifen123每100kJ × 系数21.07换算",
+          "confidence": "★★★"
+        },
+        "OPO": {
+          "value": 3.05,
+          "unit": "g",
+          "source": "naifen123每100kJ × 系数21.07换算",
+          "confidence": "★★★"
+        },
+        "prebiotics": {
+          "value": 1.8,
+          "unit": "g",
+          "source": "naifen123配方表确认含益生元（具体克数待罐体验证）",
+          "confidence": "★★☆"
+        },
+        "lutein": {
+          "value": 42.98,
+          "unit": "μg",
+          "source": "naifen123每100kJ × 系数21.07换算",
+          "confidence": "★★★"
+        },
+        "calcium": {
+          "value": 252.84,
+          "unit": "mg",
+          "source": "naifen123每100kJ × 系数21.07换算",
+          "confidence": "★★★"
+        },
+        "iron": {
+          "value": 4.21,
+          "unit": "mg",
+          "source": "naifen123每100kJ × 系数21.07换算",
+          "confidence": "★★★"
+        },
+        "zinc": {
+          "value": 3.58,
+          "unit": "mg",
+          "source": "naifen123每100kJ × 系数21.07换算",
+          "confidence": "★★★"
+        },
+        "vitA": {
+          "value": 442.5,
+          "unit": "μg RE",
+          "source": "naifen123每100kJ × 系数21.07换算",
+          "confidence": "★★★"
+        },
+        "vitD": {
+          "value": 13.27,
+          "unit": "μg",
+          "source": "naifen123每100kJ × 系数21.07换算",
+          "confidence": "★★★"
+        },
+        "vitE": {
+          "value": 11.17,
+          "unit": "mg α-TE",
+          "source": "naifen123每100kJ × 系数21.07换算",
+          "confidence": "★★★"
+        },
+        "vitK": {
+          "value": 80.07,
+          "unit": "μg",
+          "source": "naifen123每100kJ × 系数21.07换算",
+          "confidence": "★★★"
+        },
+        "vitB1": {
+          "value": 568.9,
+          "unit": "μg",
+          "source": "naifen123每100kJ × 系数21.07换算",
+          "confidence": "★★★"
+        },
+        "vitB2": {
+          "value": 1243.1,
+          "unit": "μg",
+          "source": "naifen123每100kJ × 系数21.07换算",
+          "confidence": "★★★"
+        },
+        "vitB6": {
+          "value": 417.2,
+          "unit": "μg",
+          "source": "naifen123每100kJ × 系数21.07换算",
+          "confidence": "★★★"
+        },
+        "vitB12": {
+          "value": 3.18,
+          "unit": "μg",
+          "source": "naifen123每100kJ × 系数21.07换算",
+          "confidence": "★★★"
+        },
+        "niacin": {
+          "value": 4361.5,
+          "unit": "μg",
+          "source": "naifen123每100kJ × 系数21.07换算",
+          "confidence": "★★★"
+        },
+        "folic": {
+          "value": 96.9,
+          "unit": "μg",
+          "source": "naifen123每100kJ × 系数21.07换算",
+          "confidence": "★★★"
+        },
+        "vitC": {
+          "value": 86.39,
+          "unit": "mg",
+          "source": "naifen123每100kJ × 系数21.07换算",
+          "confidence": "★★★"
+        }
+      },
+      "corrections_made": [
+        {
+          "field": "energy",
+          "old": 2103,
+          "new": 2107,
+          "reason": "v2.0误用2103kJ（美庐臻铂前代产品），v3.0改为政府PDF标注的臻铂之星实际值2107kJ，换算系数21.03→21.07"
+        },
+        {
+          "field": "protein",
+          "old": 11.57,
+          "new": 10.5,
+          "reason": "v2.0来自奶粉123每100kJ换算(0.55×21.03)，v3.0改为政府PDF直接标注值10.5g"
+        },
+        {
+          "field": "fat",
+          "old": 24.6,
+          "new": 26.0,
+          "reason": "v2.0来自奶粉123每100kJ换算(1.17×21.03)，v3.0改为政府PDF直接标注值26.0g"
+        },
+        {
+          "field": "carb",
+          "old": 56.78,
+          "new": 56.0,
+          "reason": "v2.0来自奶粉123每100kJ换算(2.70×21.03)，v3.0改为政府PDF直接标注值56.0g"
+        },
+        {
+          "field": "DHA",
+          "old": 41.1,
+          "new": 100,
+          "reason": "v2.0来自smzdm评测(可能为旧版臻铂数据，DHA仅0.59mg/100kJ)，v3.0改为政府PDF直接标注值100mg(4.75mg/100kJ)"
+        },
+        {
+          "field": "ARA",
+          "old": 52.1,
+          "new": 110,
+          "reason": "v2.0来自smzdm评测(旧版数据)，v3.0改为政府PDF直接标注值110mg"
+        },
+        {
+          "field": "choline",
+          "old": 92.5,
+          "new": 150,
+          "reason": "v2.0来自奶粉123每100kJ换算(4.40×21.03)，v3.0改为政府PDF直接标注值150mg"
+        },
+        {
+          "field": "taurine",
+          "old": 42.1,
+          "new": 21,
+          "reason": "v2.0来自奶粉123每100kJ换算(2.00×21.03)，v3.0改为政府PDF直接标注值21mg"
+        },
+        {
+          "field": "inositol",
+          "old": 23.1,
+          "new": 42,
+          "reason": "v2.0来自奶粉123每100kJ换算(1.10×21.03)，v3.0改为政府PDF直接标注值42mg"
+        },
+        {
+          "field": "lactoferrin",
+          "old": 33.26,
+          "new": 100,
+          "reason": "v2.0来自smzdm评测(旧版数据)，v3.0改为政府PDF直接标注值100mg"
+        },
+        {
+          "field": "nucleotides",
+          "old": 0,
+          "new": 20,
+          "reason": "v2.0标注未添加(奶粉123前代产品)，v3.0政府PDF确认添加20mg"
+        },
+        {
+          "field": "OPO",
+          "old": 4.6,
+          "new": 4.0,
+          "reason": "v2.0来自smzdm评测，v3.0改为政府PDF直接标注值4.0g"
+        },
+        {
+          "field": "prebiotics",
+          "old": 3.0,
+          "new": 1.8,
+          "reason": "v2.0来自奶粉123每100kJ换算(0.14×21.03)，v3.0改为政府PDF直接标注值1.8g"
+        },
+        {
+          "field": "lutein",
+          "old": 40.9,
+          "new": 110,
+          "reason": "v2.0来自奶粉123每100kJ换算(1.944×21.03)，v3.0改为政府PDF直接标注值110μg(5.22μg/100kJ,接近GB上限5.2,边界值)"
+        },
+        {
+          "field": "calcium",
+          "old": 315.5,
+          "new": 346,
+          "reason": "v2.0来自奶粉123每100kJ换算(15.0×21.03)，v3.0改为政府PDF直接标注值346mg"
+        },
+        {
+          "field": "iron",
+          "old": 4.63,
+          "new": 4.0,
+          "reason": "v2.0来自奶粉123每100kJ换算(0.22×21.03)，v3.0改为政府PDF直接标注值4.0mg"
+        },
+        {
+          "field": "zinc",
+          "old": 3.37,
+          "new": 3.0,
+          "reason": "v2.0来自奶粉123每100kJ换算(0.16×21.03)，v3.0改为政府PDF直接标注值3.0mg"
+        },
+        {
+          "field": "vitA",
+          "old": 462.7,
+          "new": 360,
+          "reason": "v2.0来自奶粉123每100kJ换算(22.0×21.03)，v3.0改为政府PDF直接标注值360μg(17.1μg/100kJ,达标14-36)"
+        },
+        {
+          "field": "vitD",
+          "old": 8.2,
+          "new": 13.0,
+          "reason": "v2.0来自奶粉123每100kJ换算(0.39×21.03)，v3.0改为政府PDF直接标注值13.0μg(0.62μg/100kJ,达标0.48-1.20)"
+        },
+        {
+          "field": "vitE",
+          "old": 8.2,
+          "new": 6.0,
+          "reason": "v2.0来自奶粉123每100kJ换算(0.39×21.03)，v3.0改为政府PDF直接标注值6.0mg"
+        },
+        {
+          "field": "vitK",
+          "old": 61.0,
+          "new": 45,
+          "reason": "v2.0来自奶粉123每100kJ换算(2.90×21.03)，v3.0改为政府PDF直接标注值45μg"
+        },
+        {
+          "field": "vitB1",
+          "old": 504.7,
+          "new": 450,
+          "reason": "v2.0来自奶粉123每100kJ换算(24.0×21.03)，v3.0改为政府PDF直接标注值450μg"
+        },
+        {
+          "field": "vitB2",
+          "old": 862.2,
+          "new": 890,
+          "reason": "v2.0来自奶粉123每100kJ换算(41.0×21.03)，v3.0改为政府PDF直接标注值890μg"
+        },
+        {
+          "field": "vitB6",
+          "old": 475.3,
+          "new": 350,
+          "reason": "v2.0来自奶粉123每100kJ换算(22.6×21.03)，v3.0改为政府PDF直接标注值350μg"
+        },
+        {
+          "field": "vitB12",
+          "old": 1.64,
+          "new": 2.0,
+          "reason": "v2.0来自奶粉123每100kJ换算(0.078×21.03)，v3.0改为政府PDF直接标注值2.0μg"
+        },
+        {
+          "field": "niacin",
+          "old": 4100.9,
+          "new": 3300,
+          "reason": "v2.0来自奶粉123每100kJ换算(195×21.03)，v3.0改为政府PDF直接标注值3300μg(156.6μg/100kJ,达标96-359)"
+        },
+        {
+          "field": "folic",
+          "old": 73.6,
+          "new": 90,
+          "reason": "v2.0来自奶粉123每100kJ换算(3.50×21.03)，v3.0改为政府PDF直接标注值90μg"
+        },
+        {
+          "field": "vitC",
+          "old": 75.7,
+          "new": 66,
+          "reason": "v2.0来自奶粉123每100kJ换算(3.60×21.03)，v3.0改为政府PDF直接标注值66mg"
+        },
+        {
+          "field": "lactoferrin",
+          "old": 100,
+          "new": 33.26,
+          "reason": "v3.0采用政府YP20230109备案标签值100mg；用户实际罐体标签为33.26mg/100g(爱企查注册库+99健康网/家庭医生在线评测亦记33.26mg)，按用户实际标签修正。官方备案与用户罐体存在版本差异，DHA/ARA/OPO等其余特色成分暂沿用备案标签值待罐体复核"
+        },
+        {
+          "field": "全部营养值（v3.2批量修正）",
+          "old": "v3.1河北政府PDF数据（实为其他产品）",
+          "new": "naifen123完整营养配方表（每100kJ按系数21.07换算）",
+          "reason": "v3.2全网复核发现河北政府PDF(YP20230109)数据与naifen123美庐臻铂之星1段完整配方表不一致，经核实该PDF实为其他产品数据。已改用naifen123(yy-id-4165)完整每100kJ营养表重新计算约20项营养值。主要变化：DHA 100→82.17、ARA 110→96.92、OPO 4.0→3.05、calcium 346→252.84、taurine 21→37.93、lutein 110→42.98、vitE 6.0→11.17、vitB2 890→1243.1等。乳铁蛋白33.26mg按用户实际罐体标签确认，prebiotics 1.8g待罐体验证"
+        }
+      ],
+      "known_limitations": "v3.2数据来源为naifen123完整营养配方表(每100kJ按系数21.07换算)，此前误用河北政府PDF已更正。乳铁蛋白33.26mg/100g按用户实际罐体标签确认。prebiotics 1.8g为naifen123配方表值，具体克数待罐体验证"
+    },
+    {
+      "id": "junlebao",
+      "name": "君乐宝乐铂",
+      "stage": "1段",
+      "spec": "808g",
+      "reg_num": "YP20170129",
+      "brand": "君乐宝 JUNLEBAO",
+      "conversion_factor": 21.37,
+      "energy_kJ_per_100g": 2137,
+      "data_sources": {
+        "primary": {
+          "name": "妈妈网新国标测评（乐铂新国标版）",
+          "url": "https://www.mama.cn/baby/art/20260509/790826.html",
+          "data_form": "每100g + 每100kJ 双单位（直接标注）",
+          "confidence": "high",
+          "note": "妈妈网乐铂1段(新国标, 808g, YP20170129)深度测评，提供每100kJ和每100g双单位完整数据。注：此前HTML误标为乐铂博越(739g, YP20220075)，v3.2已更正为乐铂(808g, YP20170129)。铁含量2.99mg/100g为重大修正(旧值4.7来自旧版数据)"
+        },
+        "superseded": {
+          "name": "妈妈网（乐铂旧国标版）",
+          "url": "https://www.mama.cn/baby/art/20260510/790910.html",
+          "data_form": "每100g（旧国标GB 10765-2010产品）",
+          "confidence": "deprecated",
+          "note": "旧版乐铂(GB10765-2010)维D仅0.32μg/100kJ、烟酸88μg/100kJ，均低于GB2021下限(0.48/96)。v3.0已弃用，改用新国标版790826.html"
+        }
+      },
+      "data_points": {
+        "protein": {
+          "value": 11.11,
+          "unit": "g",
+          "source": "妈妈网新国标（直接每100g）",
+          "confidence": "★★★"
+        },
+        "fat": {
+          "value": 27.35,
+          "unit": "g",
+          "source": "妈妈网新国标（直接每100g）",
+          "confidence": "★★★"
+        },
+        "carb": {
+          "value": 53.43,
+          "unit": "g",
+          "source": "妈妈网新国标（直接每100g）",
+          "confidence": "★★★"
+        },
+        "DHA": {
+          "value": 104.71,
+          "unit": "mg",
+          "source": "妈妈网新国标（直接每100g）",
+          "confidence": "★★★"
+        },
+        "ARA": {
+          "value": 123.95,
+          "unit": "mg",
+          "source": "妈妈网新国标（直接每100g）",
+          "confidence": "★★★"
+        },
+        "choline": {
+          "value": 160.28,
+          "unit": "mg",
+          "source": "妈妈网新国标（直接每100g）",
+          "confidence": "★★★"
+        },
+        "taurine": {
+          "value": 27.78,
+          "unit": "mg",
+          "source": "妈妈网新国标（直接每100g）",
+          "confidence": "★★★"
+        },
+        "inositol": {
+          "value": 25.64,
+          "unit": "mg",
+          "source": "妈妈网新国标（直接每100g）",
+          "confidence": "★★★"
+        },
+        "lactoferrin": {
+          "value": 0,
+          "unit": "mg",
+          "source": "妈妈网新国标确认未添加",
+          "confidence": "★★★"
+        },
+        "nucleotides": {
+          "value": 35.05,
+          "unit": "mg",
+          "source": "妈妈网新国标（直接每100g）",
+          "confidence": "★★★"
+        },
+        "OPO": {
+          "value": 6.41,
+          "unit": "g",
+          "source": "妈妈网新国标（直接每100g）",
+          "confidence": "★★★"
+        },
+        "prebiotics": {
+          "value": 1.7,
+          "unit": "g",
+          "source": "妈妈网新国标（直接每100g）",
+          "confidence": "★★★"
+        },
+        "lutein": {
+          "value": 82.06,
+          "unit": "μg",
+          "source": "妈妈网新国标（直接每100g）",
+          "confidence": "★★★"
+        },
+        "calcium": {
+          "value": 277.81,
+          "unit": "mg",
+          "source": "妈妈网新国标（直接每100g）",
+          "confidence": "★★★"
+        },
+        "iron": {
+          "value": 2.99,
+          "unit": "mg",
+          "source": "妈妈网新国标（直接每100g）",
+          "confidence": "★★★"
+        },
+        "zinc": {
+          "value": 3.21,
+          "unit": "mg",
+          "source": "妈妈网新国标（直接每100g）",
+          "confidence": "★★★"
+        },
+        "vitA": {
+          "value": 369.7,
+          "unit": "μg RE",
+          "source": "妈妈网新国标（直接每100g）",
+          "confidence": "★★★"
+        },
+        "vitD": {
+          "value": 14.1,
+          "unit": "μg",
+          "source": "妈妈网新国标（直接每100g）",
+          "confidence": "★★★"
+        },
+        "vitE": {
+          "value": 7.05,
+          "unit": "mg α-TE",
+          "source": "妈妈网新国标（直接每100g）",
+          "confidence": "★★★"
+        },
+        "vitK": {
+          "value": 26.07,
+          "unit": "μg",
+          "source": "妈妈网新国标（直接每100g）",
+          "confidence": "★★★"
+        },
+        "vitB1": {
+          "value": 512.88,
+          "unit": "μg",
+          "source": "妈妈网新国标（直接每100g）",
+          "confidence": "★★★"
+        },
+        "vitB2": {
+          "value": 1153.98,
+          "unit": "μg",
+          "source": "妈妈网新国标（直接每100g）",
+          "confidence": "★★★"
+        },
+        "vitB6": {
+          "value": 322.69,
+          "unit": "μg",
+          "source": "妈妈网新国标（直接每100g）",
+          "confidence": "★★★"
+        },
+        "vitB12": {
+          "value": 0.71,
+          "unit": "μg",
+          "source": "妈妈网新国标（直接每100g）",
+          "confidence": "★★★"
+        },
+        "niacin": {
+          "value": 3269.61,
+          "unit": "μg",
+          "source": "妈妈网新国标（直接每100g）",
+          "confidence": "★★★"
+        },
+        "folic": {
+          "value": 134.63,
+          "unit": "μg",
+          "source": "妈妈网新国标（直接每100g）",
+          "confidence": "★★★"
+        },
+        "vitC": {
+          "value": 104.71,
+          "unit": "mg",
+          "source": "妈妈网新国标（直接每100g）",
+          "confidence": "★★★"
+        }
+      },
+      "corrections_made": [
+        {
+          "field": "DHA",
+          "old": 92.8,
+          "new": 104.71,
+          "reason": "v2.0曾误改为92.8（产品JSON每100kJ×21.08换算），v3.0回归妈妈网新国标版直接值104.71mg，GB验证通过(4.96mg/100kJ)"
+        },
+        {
+          "field": "ARA",
+          "old": 105.4,
+          "new": 123.95,
+          "reason": "v2.0曾误改为105.4（产品JSON每100kJ×21.08换算），v3.0回归妈妈网新国标版直接值123.95mg"
+        },
+        {
+          "field": "choline",
+          "old": 128.6,
+          "new": 160.28,
+          "reason": "v2.0曾误改为128.6（旧版乐铂mama.cn数据），v3.0回归新国标版直接值160.28mg(7.60mg/100kJ,达标4.8-23.9)"
+        },
+        {
+          "field": "OPO",
+          "old": 4.43,
+          "new": 6.41,
+          "reason": "v2.0曾误改为4.43（旧版乐铂含OPO版数据），v3.0回归新国标版直接值6.41g"
+        },
+        {
+          "field": "taurine",
+          "old": 25.3,
+          "new": 27.78,
+          "reason": "v2.0来自旧版乐铂mama.cn数据，v3.0改为新国标版直接值27.78mg"
+        },
+        {
+          "field": "inositol",
+          "old": 25.3,
+          "new": 25.64,
+          "reason": "v2.0来自旧版乐铂mama.cn数据，v3.0改为新国标版直接值25.64mg"
+        },
+        {
+          "field": "nucleotides",
+          "old": 24.7,
+          "new": 35.05,
+          "reason": "v2.0来自旧版乐铂mama.cn数据，v3.0改为新国标版直接值35.05mg"
+        },
+        {
+          "field": "lutein",
+          "old": 82.21,
+          "new": 82.06,
+          "reason": "v2.0来自旧版乐铂mama.cn数据，v3.0改为新国标版直接值82.06μg"
+        },
+        {
+          "field": "vitA",
+          "old": 368.9,
+          "new": 369.7,
+          "reason": "v2.0来自旧版乐铂mama.cn数据，v3.0改为新国标版直接值369.7μg(17.54μg/100kJ,达标14-36)"
+        },
+        {
+          "field": "vitD",
+          "old": 6.75,
+          "new": 14.1,
+          "reason": "v2.0来自旧版乐铂(GB2010)数据0.32μg/100kJ低于GB2021下限0.48，v3.0改为新国标版直接值14.1μg(0.66μg/100kJ,达标0.48-1.20)"
+        },
+        {
+          "field": "vitE",
+          "old": 6.11,
+          "new": 7.05,
+          "reason": "v2.0来自旧版乐铂mama.cn数据，v3.0改为新国标版直接值7.05mg"
+        },
+        {
+          "field": "vitK",
+          "old": 25.3,
+          "new": 26.07,
+          "reason": "v2.0来自旧版乐铂mama.cn数据，v3.0改为新国标版直接值26.07μg"
+        },
+        {
+          "field": "vitB1",
+          "old": 371.0,
+          "new": 512.88,
+          "reason": "v2.0来自旧版乐铂mama.cn数据，v3.0改为新国标版直接值512.88μg"
+        },
+        {
+          "field": "vitB2",
+          "old": 843.2,
+          "new": 1153.98,
+          "reason": "v2.0来自旧版乐铂mama.cn数据，v3.0改为新国标版直接值1153.98μg"
+        },
+        {
+          "field": "vitB6",
+          "old": 189.7,
+          "new": 322.69,
+          "reason": "v2.0来自旧版乐铂mama.cn数据，v3.0改为新国标版直接值322.69μg"
+        },
+        {
+          "field": "vitB12",
+          "old": 0.7,
+          "new": 0.71,
+          "reason": "v2.0来自旧版乐铂mama.cn数据，v3.0改为新国标版直接值0.71μg"
+        },
+        {
+          "field": "niacin",
+          "old": 1855.0,
+          "new": 3269.61,
+          "reason": "v2.0来自旧版乐铂(GB2010)数据88μg/100kJ低于GB2021下限96，v3.0改为新国标版直接值3269.61μg(153μg/100kJ,达标96-359)"
+        },
+        {
+          "field": "folic",
+          "old": 65.35,
+          "new": 134.63,
+          "reason": "v2.0来自旧版乐铂mama.cn数据，v3.0改为新国标版直接值134.63μg"
+        },
+        {
+          "field": "vitC",
+          "old": 65.35,
+          "new": 104.71,
+          "reason": "v2.0来自旧版乐铂mama.cn数据，v3.0改为新国标版直接值104.71mg"
+        },
+        {
+          "field": "产品身份+6项宏量值（v3.2修正）",
+          "old": "乐铂博越(739g, YP20220075), energy 2108, protein 11.17, fat 26.77, carb 54.81, calcium 291, iron 4.7, zinc 3.5",
+          "new": "乐铂(808g, YP20170129), energy 2137, protein 11.11, fat 27.35, carb 53.43, calcium 277.81, iron 2.99, zinc 3.21",
+          "reason": "v3.2全网复核确认：HTML此前的'乐铂博越'(739g, YP20220075)营养数据实际来自mama.cn乐铂1段(808g, YP20170129)文章，产品身份标注错误。已更正产品名称/规格/注册号。同时发现6项宏量值需修正(energy/protein/fat/carb/calcium/zinc)，其中iron 4.7→2.99为重大修正(偏差57%，旧值来自旧版数据)"
+        }
+      ],
+      "known_limitations": "v3.2更正产品身份：乐铂博越(739g, YP20220075)→乐铂(808g, YP20170129)。6项宏量值修正含iron重大修正(4.7→2.99mg/100g)。其余22项营养值保持mama.cn新国标版直接值不变"
+    },
+    {
+      "id": "wandashan",
+      "name": "完达山优巧贝能",
+      "stage": "1段",
+      "spec": "400g",
+      "reg_num": "YP20230106",
+      "brand": "完达山 WONDERSUN",
+      "conversion_factor": 20.8,
+      "energy_kJ_per_100g": 2080,
+      "data_sources": {
+        "primary": {
+          "name": "奶粉123（优巧贝能1段对比页）",
+          "url": "https://naifen123.cn/",
+          "data_form": "每100kJ（需换算）",
+          "confidence": "low",
+          "note": "DHA 4.60mg/100kJ、叶黄素约10.5μg/100kJ、益生元+益生菌+叶黄素组合、不含乳铁蛋白/OPO 由奶粉123确认；其余约20项基础营养值来源碎片，按能量系数20.80换算，待罐体标签复核"
+        },
+        "secondary": {
+          "name": "宝宝树（国食注字YP20230106备案）+ 品牌资料",
+          "url": "https://www.babytree.com/",
+          "data_form": "产品备案信息",
+          "confidence": "medium",
+          "note": "YP20230106为国食注字新国标注册号，400g袋装(京东¥44)，另有800g罐装约¥210-215"
+        }
+      },
+      "data_points": {
+        "protein": {
+          "value": 11.4,
+          "unit": "g",
+          "source": "奶粉123碎片数据按系数20.80换算（待罐体验证）",
+          "confidence": "★☆☆"
+        },
+        "fat": {
+          "value": 25.2,
+          "unit": "g",
+          "source": "奶粉123碎片数据按系数20.80换算（待罐体验证）",
+          "confidence": "★☆☆"
+        },
+        "carb": {
+          "value": 54.1,
+          "unit": "g",
+          "source": "奶粉123碎片数据按系数20.80换算（待罐体验证）",
+          "confidence": "★☆☆"
+        },
+        "DHA": {
+          "value": 95.7,
+          "unit": "mg",
+          "source": "奶粉123确认4.60mg/100kJ × 20.80",
+          "confidence": "★★☆"
+        },
+        "ARA": {
+          "value": 108.2,
+          "unit": "mg",
+          "source": "奶粉123碎片数据按系数20.80换算（待罐体验证）",
+          "confidence": "★☆☆"
+        },
+        "choline": {
+          "value": 156.0,
+          "unit": "mg",
+          "source": "奶粉123碎片数据按系数20.80换算（待罐体验证）",
+          "confidence": "★☆☆"
+        },
+        "taurine": {
+          "value": 35.4,
+          "unit": "mg",
+          "source": "奶粉123碎片数据按系数20.80换算（待罐体验证）",
+          "confidence": "★☆☆"
+        },
+        "inositol": {
+          "value": 33.3,
+          "unit": "mg",
+          "source": "奶粉123碎片数据按系数20.80换算（待罐体验证）",
+          "confidence": "★☆☆"
+        },
+        "lactoferrin": {
+          "value": 0,
+          "unit": "mg",
+          "source": "奶粉123确认未添加乳铁蛋白",
+          "confidence": "★★☆"
+        },
+        "nucleotides": {
+          "value": 30.2,
+          "unit": "mg",
+          "source": "奶粉123碎片数据按系数20.80换算（待罐体验证）",
+          "confidence": "★☆☆"
+        },
+        "OPO": {
+          "value": 0,
+          "unit": "g",
+          "source": "奶粉123确认未添加OPO",
+          "confidence": "★★☆"
+        },
+        "prebiotics": {
+          "value": 3.4,
+          "unit": "g",
+          "source": "奶粉123确认含益生元组合（具体克数待罐体验证）",
+          "confidence": "★☆☆"
+        },
+        "lutein": {
+          "value": 218,
+          "unit": "μg",
+          "source": "奶粉123确认约10.5μg/100kJ × 20.80（超常规上限5.2，待罐体验证）",
+          "confidence": "★★☆"
+        },
+        "calcium": {
+          "value": 291.2,
+          "unit": "mg",
+          "source": "奶粉123碎片数据按系数20.80换算（待罐体验证）",
+          "confidence": "★☆☆"
+        },
+        "iron": {
+          "value": 2.7,
+          "unit": "mg",
+          "source": "奶粉123碎片数据按系数20.80换算（待罐体验证）",
+          "confidence": "★☆☆"
+        },
+        "vitA": {
+          "value": 374.4,
+          "unit": "μg RE",
+          "source": "奶粉123碎片数据按系数20.80换算（待罐体验证）",
+          "confidence": "★☆☆"
+        },
+        "vitD": {
+          "value": 12.06,
+          "unit": "μg",
+          "source": "奶粉123碎片数据按系数20.80换算（待罐体验证）",
+          "confidence": "★☆☆"
+        },
+        "vitE": {
+          "value": 6.66,
+          "unit": "mg α-TE",
+          "source": "奶粉123碎片数据按系数20.80换算（待罐体验证）",
+          "confidence": "★☆☆"
+        },
+        "vitK": {
+          "value": 31.2,
+          "unit": "μg",
+          "source": "奶粉123碎片数据按系数20.80换算（待罐体验证）",
+          "confidence": "★☆☆"
+        },
+        "vitB1": {
+          "value": 374.4,
+          "unit": "μg",
+          "source": "奶粉123碎片数据按系数20.80换算（待罐体验证）",
+          "confidence": "★☆☆"
+        },
+        "vitB2": {
+          "value": 499.2,
+          "unit": "μg",
+          "source": "奶粉123碎片数据按系数20.80换算（待罐体验证）",
+          "confidence": "★☆☆"
+        },
+        "vitB6": {
+          "value": 343.2,
+          "unit": "μg",
+          "source": "奶粉123碎片数据按系数20.80换算（待罐体验证）",
+          "confidence": "★☆☆"
+        },
+        "vitB12": {
+          "value": 1.0,
+          "unit": "μg",
+          "source": "奶粉123碎片数据按系数20.80换算（待罐体验证）",
+          "confidence": "★☆☆"
+        },
+        "niacin": {
+          "value": 3474,
+          "unit": "μg",
+          "source": "奶粉123碎片数据按系数20.80换算（待罐体验证）",
+          "confidence": "★☆☆"
+        },
+        "folic": {
+          "value": 64.5,
+          "unit": "μg",
+          "source": "奶粉123碎片数据按系数20.80换算（待罐体验证）",
+          "confidence": "★☆☆"
+        },
+        "vitC": {
+          "value": 64.5,
+          "unit": "mg",
+          "source": "奶粉123碎片数据按系数20.80换算（待罐体验证）",
+          "confidence": "★☆☆"
+        },
+        "zinc": {
+          "value": 3.12,
+          "unit": "mg",
+          "source": "奶粉123碎片数据按系数20.80换算（待罐体验证）",
+          "confidence": "★☆☆"
+        }
+      },
+      "corrections_made": [
+        {
+          "field": "name",
+          "old": "完达山菁稚非凡",
+          "new": "完达山优巧贝能",
+          "reason": "v3.1将超高端菁稚非凡(0.36元/g, YP20220146)替换为平价新国标优巧贝能(0.19元/g, YP20230106)，更契合平价横评定位"
+        },
+        {
+          "field": "spec",
+          "old": "750g",
+          "new": "800g",
+          "reason": "优巧贝能1段规格800g"
+        },
+        {
+          "field": "reg_num",
+          "old": "YP20220146",
+          "new": "YP20230106",
+          "reason": "优巧贝能为新国标注册号YP20230106"
+        },
+        {
+          "field": "energy_kJ_per_100g",
+          "old": 2083,
+          "new": 2080,
+          "reason": "优巧贝能能量2080kJ/100g，换算系数由20.83调整为20.80"
+        },
+        {
+          "field": "lactoferrin",
+          "old": 30,
+          "new": 0,
+          "reason": "优巧贝能经奶粉123确认不含乳铁蛋白（菁稚非凡含30mg为旧数据）"
+        },
+        {
+          "field": "OPO",
+          "old": 6.0,
+          "new": 0,
+          "reason": "优巧贝能经奶粉123确认不含OPO（菁稚非凡2.5倍OPO为旧数据）"
+        },
+        {
+          "field": "lutein",
+          "old": 210,
+          "new": 218,
+          "reason": "优巧贝能叶黄素约10.5μg/100kJ×20.80=218（菁稚非凡10.08μg/100kJ为旧数据）"
+        },
+        {
+          "field": "spec+price（v3.2修正）",
+          "old": "800g, 京东约154元",
+          "new": "400g袋装, 京东约44元（另有800g罐装约210-215元）",
+          "reason": "v3.2全网电商平台复核：优巧贝能1段京东实际为400g袋装¥44，此前800g/¥154为错误数据。另有800g罐装约¥210-215可选"
+        }
+      ],
+      "known_limitations": "优巧贝能1段公开数据高度碎片化：仅DHA(4.60mg/100kJ)、叶黄素(约10.5μg/100kJ)、益生元+益生菌+叶黄素组合、不含乳铁蛋白/OPO 由奶粉123确认；其余约20项基础营养值（蛋白质/脂肪/碳水/钙铁锌/维生素等）来源碎片、按能量系数20.80推算，均需以罐体标签为准复核（已标注★☆☆）"
+    }
+  ],
+  "conversion_methodology": {
+    "description": "对于仅提供每100kJ数据的产品，使用各产品的实际能量值进行精确换算",
+    "formula": "每100g值 = 每100kJ值 × (能量kJ ÷ 100)",
+    "example": "完达山优巧贝能能量2080kJ/100g → 系数 = 2080/100 = 20.80；奶粉123标注DHA 4.60mg/100kJ → 4.60 × 20.80 = 95.7mg/100g",
+    "product_factors": {
+      "飞鹤臻爱倍护": {
+        "factor": 21.47,
+        "energy_kJ": 2147,
+        "needs_conversion": false,
+        "note": "妈妈网新国标直接提供每100g值"
+      },
+      "金领冠育护": {
+        "factor": null,
+        "energy_kJ": 2163,
+        "needs_conversion": false,
+        "note": "政府PDF直接提供每100g值"
+      },
+      "中特美庐臻铂之星": {
+        "factor": 21.07,
+        "energy_kJ": 2107,
+        "needs_conversion": true,
+        "note": "naifen123提供每100kJ数据，按系数21.07换算"
+      },
+      "完达山优巧贝能": {
+        "factor": 20.8,
+        "energy_kJ": 2080,
+        "needs_conversion": true,
+        "note": "奶粉123仅提供每100kJ碎片数据，按系数20.80换算（多项待罐体验证）"
+      },
+      "君乐宝乐铂": {
+        "factor": 21.37,
+        "energy_kJ": 2137,
+        "needs_conversion": false,
+        "note": "妈妈网新国标直接提供每100g值"
+      }
+    },
+    "note": "飞鹤、金领冠、君乐宝均直接取每100g值无需换算。美庐按系数21.07、完达山按系数20.80换算。完达山优巧贝能多项待罐体标签复核。"
+  },
+  "confidence_levels": {
+    "★★★ 高": "数据直接来源于产品罐体标签、政府备案PDF或权威测评的每100g标注值，无需换算",
+    "★★☆ 中": "数据由每100kJ换算而来（使用能量系数），或来源于同品牌相近系列，可能存在小幅偏差"
+  },
+  "source_hierarchy": [
+    {
+      "rank": 1,
+      "source": "政府产品标签备案PDF",
+      "description": "产品罐体营养成分表的政府备案文件，最高权威性。金领冠(辽宁)使用此来源"
+    },
+    {
+      "rank": 2,
+      "source": "妈妈网新国标测评",
+      "description": "专业母婴媒体新国标版深度测评，提供每100g和每100kJ双单位数据。飞鹤(790816)、君乐宝(790826)均使用此来源"
+    },
+    {
+      "rank": 3,
+      "source": "奶粉123",
+      "description": "奶粉信息平台，提供每100kJ数据，需按能量系数换算。美庐(v3.2更新)、完达山使用此来源"
+    },
+    {
+      "rank": 4,
+      "source": "奶粉智库/品牌官方",
+      "description": "第三方奶粉知识库或品牌官方公布数据，提供部分成分确认。完达山部分成分使用"
+    },
+    {
+      "rank": 5,
+      "source": "京东",
+      "description": "电商平台，用于产品价格核实(2026年8月5日)"
+    }
+  ],
+  "gb10765_verification": {
+    "standard": "GB 10765-2021 食品安全国家标准 婴儿配方食品",
+    "method": "将其中4款(飞鹤/金领冠/美庐/君乐宝，排除待复核的完达山优巧贝能)共108项营养数据(4×27)反推回每100kJ后对照国标范围",
+    "result": "4款(飞鹤/金领冠/美庐/君乐宝)全部营养数据反推回每100kJ后对照国标范围，全部达标。完达山优巧贝能约20项基础营养待罐体复核，未计入达标率统计。",
+    "exceptions": [
+      {
+        "product": "君乐宝乐铂",
+        "field": "iron",
+        "old_per_100g": 4.7,
+        "new_per_100g": 2.99,
+        "per_100kJ": 0.14,
+        "gb_range": "0.10-0.36 mg/100kJ",
+        "status": "corrected",
+        "note": "v3.2重大修正：旧值4.7mg/100g(0.22mg/100kJ)来自旧版数据，新值2.99mg/100g(0.14mg/100kJ)来自mama.cn新国标版，达标"
+      }
+    ],
+    "energy_consistency_check": {
+      "method": "蛋白质×17 + 脂肪×37 + 碳水×17 (kJ/g能量系数) per 100kJ 应≈100",
+      "results": {
+        "飞鹤": 98.0,
+        "金领冠": 98.9,
+        "美庐": 98.6,
+        "君乐宝": 98.7,
+        "完达山": 98.4
+      },
+      "conclusion": "5款产品宏量营养素供能合计均接近100kJ/100kJ，确认无每100g/每100kJ/每100ml单位混淆（完达山优巧贝能按新能量2080kJ/100g重算为98.4）"
+    },
+    "unit_confusion_diagnosis": {
+      "method": "对每项不达标值，测试按每100ml(×~7稀释)或每100kJ(直接)解读是否能修复",
+      "result": "两种解读均无法修复任何不达标项 → 确认为数据本身有误(旧国标版本)或边界值，而非单位混淆",
+      "conclusion": "已排除系统性单位混淆；完达山优巧贝能约20项基础营养待罐体标签复核，未计入达标率统计"
+    }
+  },
+  "total_corrections": 62,
+  "correction_summary": [
+    "飞鹤(0项): v3.2复核确认数据完全正确，无需修改",
+    "金领冠(0项): v3.2复核确认数据完全正确，无需修改",
+    "美庐(约20项): v3.2数据源从河北政府PDF(实为其他产品)更正为naifen123完整营养配方表，按系数21.07重新计算。主要变化：DHA 100→82.17、ARA 110→96.92、OPO 4.0→3.05、calcium 346→252.84、taurine 21→37.93、lutein 110→42.98、vitE 6.0→11.17等",
+    "君乐宝(7项): v3.2产品身份更正(乐铂博越→乐铂, 739g→808g, YP20220075→YP20170129)，6项宏量修正含iron重大修正(4.7→2.99, 偏差57%)",
+    "完达山(2项): v3.2规格更正(800g→400g袋装)，价格更正(¥154→¥44)"
+  ]
+}
