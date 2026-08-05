@@ -1,0 +1,38 @@
+{
+  "standard": "GB 10765-2021 食品安全国家标准 婴儿配方食品",
+  "applies_to": "0-6月龄婴儿配方食品（1段）",
+  "unit": "每100kJ",
+  "source": "海关总署官方PDF (jckspj.customs.gov.cn) + 韩国/西班牙政府标准镜像，2026-08-05 复核提取。注意：本文件为唯一事实来源，脚本只读取不硬编码范围。",
+  "notes": "范围取自标准表1(蛋白质/脂肪/碳水)、表2(维生素)、表3(矿物质)、表4(可选择成分)。胆碱在2021版由'可选择'调整为'必需'。核苷酸在2021版已移出标准表，无强制范围。ARA(表4)无最小值(N.S.)，最大值19.1mg/100kJ，且要求 ARA≥DHA 且 ARA≤2×DHA。",
+  "ranges": {
+    "protein":     {"min": 0.43, "max": 0.72,   "unit": "g",      "category": "essential", "key": "表1"},
+    "fat":         {"min": 1.05, "max": 1.43,   "unit": "g",      "category": "essential", "key": "表1"},
+    "carb":        {"min": 2.2,  "max": 3.3,    "unit": "g",      "category": "essential", "key": "表1"},
+    "vitA":        {"min": 14,   "max": 36,     "unit": "μg RE",  "category": "essential", "key": "表2"},
+    "vitD":        {"min": 0.48, "max": 1.20,   "unit": "μg",     "category": "essential", "key": "表2"},
+    "vitE":        {"min": 0.12, "max": 1.20,   "unit": "mg α-TE","category": "essential", "key": "表2"},
+    "vitK":        {"min": 0.96, "max": 6.45,   "unit": "μg",     "category": "essential", "key": "表2"},
+    "vitB1":       {"min": 14,   "max": 72,     "unit": "μg",     "category": "essential", "key": "表2"},
+    "vitB2":       {"min": 19,   "max": 120,    "unit": "μg",     "category": "essential", "key": "表2"},
+    "vitB6":       {"min": 8.4,  "max": 41.8,   "unit": "μg",     "category": "essential", "key": "表2"},
+    "vitB12":      {"min": 0.024,"max": 0.359,  "unit": "μg",     "category": "essential", "key": "表2"},
+    "niacin":      {"min": 96,   "max": 359,    "unit": "μg",     "category": "essential", "key": "表2"},
+    "folic":       {"min": 2.9,  "max": 12.0,   "unit": "μg",     "category": "essential", "key": "表2"},
+    "vitC":        {"min": 2.4,  "max": 16.7,   "unit": "mg",     "category": "essential", "key": "表2"},
+    "calcium":     {"min": 12,   "max": 35,     "unit": "mg",     "category": "essential", "key": "表3"},
+    "iron":        {"min": 0.10, "max": 0.36,   "unit": "mg",     "category": "essential", "key": "表3", "note": "乳基婴儿配方食品"},
+    "zinc":        {"min": 0.12, "max": 0.36,   "unit": "mg",     "category": "essential", "key": "表3", "note": "乳基婴儿配方食品"},
+    "choline":     {"min": 4.8,  "max": 23.9,   "unit": "mg",     "category": "essential", "key": "表2", "note": "2021版由可选择调整为必需"},
+    "inositol":    {"min": 1.0,  "max": 9.6,    "unit": "mg",     "category": "optional",  "key": "表4"},
+    "taurine":     {"min": 0.8,  "max": 4.0,    "unit": "mg",     "category": "optional",  "key": "表4"},
+    "DHA":         {"min": 3.6,  "max": 9.6,    "unit": "mg",     "category": "optional",  "key": "表4"},
+    "ARA":         {"min": null, "max": 19.1,   "unit": "mg",     "category": "optional",  "key": "表4", "ratio_rule": "ARA≥DHA 且 ARA≤2×DHA", "note": "最小值N.S.(无)，最大值19.1mg/100kJ"}
+  },
+  "not_gb_controlled": {
+    "lactoferrin": "可选强化成分，GB 10765-2021 无强制范围",
+    "nucleotides": "2021版已移出标准表，无强制范围（旧版曾有上限）",
+    "OPO":         "可选结构化脂肪，无强制范围",
+    "prebiotics":  "可选成分，无强制范围",
+    "lutein":      "可选成分，无强制范围"
+  }
+}
