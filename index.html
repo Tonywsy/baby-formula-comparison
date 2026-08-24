@@ -163,6 +163,17 @@ footer{background:var(--text);color:rgba(255,255,255,.7);padding:24px 16px;text-
 @media(max-width:768px){.products-grid{grid-template-columns:repeat(2,1fr)}.score-grid{grid-template-columns:repeat(2,1fr)}table{font-size:.76rem}thead th,tbody td{padding:6px 8px}section{padding:24px 0}.prod-card{padding:12px}.score-card{padding:14px}}
 @media(max-width:480px){.products-grid{grid-template-columns:1fr 1fr;gap:8px}.score-grid{grid-template-columns:1fr;gap:10px}.score-ring{width:80px;height:80px}.score-ring-inner{width:64px;height:64px}.score-ring-inner .score-val{font-size:1.5rem}.hero{padding:28px 14px 24px}.hero h1{font-size:1.3rem}.section-title{font-size:1.05rem}.chart-box{height:300px}.chart-box-tall{height:360px}.score-card{padding:14px;display:flex;align-items:center;gap:12px;text-align:left}.score-card .name{margin-bottom:0;flex-shrink:0;width:70px}.score-card .dims{margin-top:0;flex:1}.score-card .dims span{font-size:.66rem;padding:1px 5px}}
 @media(max-width:360px){.score-grid{grid-template-columns:1fr 1fr;gap:6px}.score-card{padding:8px}}
+  /* 同系列引流条 */
+  .series-bar{background:linear-gradient(135deg,#FFF6EF,#FFFDFA);border:1px solid #FFD9C2;border-radius:16px;padding:22px 20px;margin-top:18px}
+  .series-bar .sb-title{font-size:1.25rem;font-weight:700;color:#2c3e50;margin:0 0 6px}
+  .series-bar .sb-desc{font-size:.85rem;color:#6b7280;margin:0 0 14px;line-height:1.6}
+  .series-cards{display:flex;gap:14px;flex-wrap:wrap}
+  .series-card{flex:1 1 220px;display:flex;flex-direction:column;gap:5px;background:#fff;border:1px solid #FFD9C2;border-radius:12px;padding:16px 18px;text-decoration:none;color:#9a3d12;box-shadow:0 2px 8px rgba(232,132,60,.08);transition:transform .15s,box-shadow .15s,border-color .15s}
+  .series-card:hover{transform:translateY(-3px);box-shadow:0 6px 16px rgba(232,132,60,.18);border-color:#E8843C}
+  .series-card .sc-emoji{font-size:26px;line-height:1}
+  .series-card b{font-size:16px;color:#9a3d12}
+  .series-card .sc-sub{font-size:13px;color:#666}
+  .series-note{margin-top:12px;font-size:13px;color:#B84A1A;font-weight:600}
 </style>
 </head>
 <body>
@@ -375,6 +386,30 @@ footer{background:var(--text);color:rgba(255,255,255,.7);padding:24px 16px;text-
 </div>
 
 <button class="totop" id="totop" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+  <!-- 同系列引流（与疫苗/安全座椅页同款） -->
+  <div class="series-bar">
+    <h2 class="sb-title">葵爸同系列测评</h2>
+    <p class="sb-desc">奶粉只是宝宝口粮的一环，出行安全和穿用防护同样重要——这些硬核横评也值得你收藏：</p>
+    <div class="series-cards">
+      <a class="series-card" href="https://tonywsy.github.io/newborn-vaccine-review/">
+        <span class="sc-emoji">💉</span>
+        <b>新生儿疫苗大横评</b>
+        <span class="sc-sub">免费/自费怎么选，一篇讲透</span>
+      </a>
+      <a class="series-card" href="https://tonywsy.github.io/car-seat-review/">
+        <span class="sc-emoji">🚗</span>
+        <b>儿童安全座椅大横评</b>
+        <span class="sc-sub">3C / i-Size / ADAC 数据底座</span>
+      </a>
+      <a class="series-card" href="https://tonywsy.github.io/diaper-review/">
+        <span class="sc-emoji">👶</span>
+        <b>纸尿裤 / 拉拉裤横评</b>
+        <span class="sc-sub">反渗·透气·性价比实测</span>
+      </a>
+    </div>
+    <p class="series-note">奶粉横评还有「进口高端 / 进口对比 / 国产对比」版本，想看哪款点主页 → 关注葵爸看更多硬核测评</p>
+  </div>
 
 <footer>
   <p>国产奶粉深度对比评测 · 数据截至2026年8月 · 经Kimi第三方复核验证 · 仅供参考</p>
